@@ -64,12 +64,102 @@
   $project = "My Port!!";
   $finished = false; // true = 1 / false = 0
   $dateOfProject = "2024-10-11";
-  $desc = "My first portfolio. Write at PHP and HTML."
+  $desc = "My first portfolio. Write at PHP and HTML.";
+
+  // Array
+  // $projects = [
+  //   "My portofilo",
+  //   "List of Tasks",
+  //   "Control read of books",
+  //   "More a task",
+  // ];
+
+  $projects = [
+    [
+      "title" => "My portfolio",
+      "finished" => false,
+      "date" => "2024-10-11",
+      "describer" => "My first portfolio. Write at PHP and HTML."
+    ],
+    [
+      "title" => "List tasks",
+      "finished" => true,
+      "date" => "2024-05-11",
+      "describer" => "My first portfolio. Write at PHP and HTML."
+    ],
+
+    // "My portofilo",
+    // "List of Tasks",
+    // "Control read of books",
+    // "More a task",
+  ];
   ?>
 
   <hr />
 
-  <div
+  <ul>
+    <?php
+    foreach ($projects as $project) {
+      // echo "<li>" . $project . "</li>";
+      echo "<li>{$project['title']}</li>";
+      // echo "<li>{$project[1]}</li>";
+      // echo "<li>{$project} test</li>";
+      // echo '<li>$project</li>'; -> Error
+    }
+    ?>
+  </ul>
+
+  <!-- using if  -->
+  <ul>
+    <?php foreach ($projects as $project): ?>
+      <div
+        <?php if ((2024 - $ano) > 2): ?>
+        style="background-color:burlywood;"
+        <?php endif; ?>>
+
+        <h2><?= $project['title'] ?></h2>
+        <p><?= $project['describer'] ?></p>
+        <div>
+          <div><?= $project['date'] ?></div>
+          <div>Project:
+            <!-- option #01 - default -->
+            <?php if ($project['finished']): ?>
+              <span style="color: green">✅ Finished</span>
+            <?php else: ?>
+              <span style="color: red">❌ Not finished</span>
+            <?php endif; ?>
+
+
+
+            <!-- option #02 - revert logic operation -->
+            <?php if ($project['finished'] == false): ?>
+              <span style="color: red">❌ Not finished</span>
+            <?php else: ?>
+              <span style="color: green">✅ Finished</span>
+            <?php endif; ?>
+
+
+            <!-- option #03 - logic abbreviation -->
+            <?php if (! $project['finished']): ?>
+              <span style="color: red">❌ Not finished</span>
+            <?php else: ?>
+              <span style="color: green">✅ Finished</span>
+            <?php endif; ?>
+
+            <?php
+            // if( $project['finished'] ) {
+            //   echo "✅ Finalizado";
+            // } else {
+            //   echo "❌ Não finalizado";
+            // }
+            ?>
+          </div>
+        </div>
+      </div>
+    <?php endforeach; ?>
+  </ul>
+
+  <!-- <div
     <?php if ((2024 - $ano) > 2): ?>
       style="background-color:burlywood;"
     <?php endif; ?>>
@@ -80,44 +170,44 @@
       <div><?= $dateOfProject ?></div>
       <div>Project:
         <!-- option #01 - default -->
-        <?php if ($finished): ?>
-          <span style="color: green">✅ Finished</span>
-        <?php else: ?>
-          <span style="color: red">❌ Not finished</span>
-        <?php endif; ?>
-
-        
-
-        <!-- option #02 - revert logic operation -->
-        <?php if ($finished == false): ?>
-          <span style="color: red">❌ Not finished</span>
-        <?php else: ?>
-          <span style="color: green">✅ Finished</span>
-        <?php endif; ?>
+  <?php if ($finished): ?>
+    <span style="color: green">✅ Finished</span>
+  <?php else: ?>
+    <span style="color: red">❌ Not finished</span>
+  <?php endif; ?>
 
 
-        <!-- option #03 - logic abbreviation -->
-        <?php if ( ! $finished): ?>
-          <span style="color: red">❌ Not finished</span>
-        <?php else: ?>
-          <span style="color: green">✅ Finished</span>
-        <?php endif; ?>
-        
-        <?php
-        // if case the variable is equal 1 than true return
-        // ✅
-        // if not
-        // ❌
 
-        // if( $finished ) {
-        //   echo "✅ Finalizado";
-        // } else {
-        //   echo "❌ Não finalizado";
-        // }
-        ?>
-      </div>
-    </div>
+  <!-- option #02 - revert logic operation -->
+  <?php if ($finished == false): ?>
+    <span style="color: red">❌ Not finished</span>
+  <?php else: ?>
+    <span style="color: green">✅ Finished</span>
+  <?php endif; ?>
+
+
+  <!-- option #03 - logic abbreviation -->
+  <?php if (! $finished): ?>
+    <span style="color: red">❌ Not finished</span>
+  <?php else: ?>
+    <span style="color: green">✅ Finished</span>
+  <?php endif; ?>
+
+  <?php
+  // if case the variable is equal 1 than true return
+  // ✅
+  // if not
+  // ❌
+
+  // if( $finished ) {
+  //   echo "✅ Finalizado";
+  // } else {
+  //   echo "❌ Não finalizado";
+  // }
+  ?>
   </div>
+  </div>
+  </div> -->
 
   <hr />
 
