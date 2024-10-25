@@ -93,6 +93,22 @@
     // "Control read of books",
     // "More a task",
   ];
+
+  function verifyFinished( $project ) { 
+    // if (! $project['finished']) {
+    //   // echo vs return
+    //   return '<span style="color: green">✅ Finished (function)</span>';
+    // } else {
+    //   return '<span style="color: red">❌ Not finished (function)</span>';
+    // }
+
+    if ($project['finished']) {
+      return '<span style="color: green">✅ Finished (function)</span>';
+    }
+
+    return '<span style="color: red">❌ Not finished (function)</span>';
+  };
+
   ?>
 
   <hr />
@@ -122,6 +138,11 @@
         <div>
           <div><?= $project['date'] ?></div>
           <div>Project:
+            <!-- option - function -->
+            <?=verifyFinished($project)?>
+            <!-- <?php echo verifyFinished($project); ?> -->
+
+
             <!-- option #01 - default -->
             <?php if ($project['finished']): ?>
               <span style="color: green">✅ Finished</span>
