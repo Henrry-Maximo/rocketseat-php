@@ -87,6 +87,24 @@
       "date" => "2024-05-11",
       "describer" => "My first portfolio. Write at PHP and HTML."
     ],
+    [
+      "title" => "Study PHP",
+      "finished" => true,
+      "date" => "2024-03-05",
+      "describer" => "My first portfolio. Write at PHP and HTML."
+    ],
+    [
+      "title" => "Study ReactJS",
+      "finished" => true,
+      "date" => "2024-05-11",
+      "describer" => "My first portfolio. Write at PHP and HTML."
+    ],
+    [
+      "title" => "Study Nodejs",
+      "finished" => true,
+      "date" => "2024-05-11",
+      "describer" => "My first portfolio. Write at PHP and HTML."
+    ],
 
     // "My portofilo",
     // "List of Tasks",
@@ -108,6 +126,18 @@
 
     return '<span style="color: red">❌ Not finished (function)</span>';
   };
+
+  function filterProjectsFinished($listOfProjects) {
+    $filters = [];
+
+    foreach ($listOfProjects as $project) {
+      if($project['finished']) {
+        $filters[] = $project;
+      }
+    }
+
+    return $filters;
+  }
 
   ?>
 
