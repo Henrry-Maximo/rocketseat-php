@@ -112,7 +112,8 @@
     // "More a task",
   ];
 
-  function verifyFinished( $project ) { 
+  function verifyFinished($project)
+  {
     // if (! $project['finished']) {
     //   // echo vs return
     //   return '<span style="color: green">✅ Finished (function)</span>';
@@ -127,8 +128,9 @@
     return '<span style="color: red">❌ Not finished (function)</span>';
   };
 
+  // $filterProjects = function ($listOfProjects, $finished = null) {}
   function filterProjects($listOfProjects, $finished = null) {
-    
+
     // if return of finished is equal a null, then display all projects
     if (is_null($finished)) {
       return $listOfProjects;
@@ -138,7 +140,7 @@
 
     foreach ($listOfProjects as $project) {
       // ! is_null($finished)
-      if(($project['finished']) === $finished) {
+      if (($project['finished']) === $finished) {
         $filters[] = $project;
       }
     }
@@ -146,17 +148,19 @@
     // desafio -> filter by name and date
 
     return $filters;
-  }
+  };
 
+
+  $projectsFilters = filterProjects($projects, true);
   ?>
 
   <hr />
 
   <ul>
     <?php
-    foreach ($filterProjects($projects, null) as $project) {
+    foreach (filterProjects($projects, false) as $project) {
       // echo "<li>" . $project . "</li>";
-      echo "<li>{$project['title']}</li>";
+      // echo "<li>{$project['title']}</li>";
       // echo "<li>{$project[1]}</li>";
       // echo "<li>{$project} test</li>";
       // echo '<li>$project</li>'; -> Error
@@ -166,7 +170,7 @@
 
   <!-- using if  -->
   <ul>
-    <?php foreach ($projects as $project): ?>
+    <?php foreach ($projectsFilters as $project): ?>
       <div
         <?php if ((2024 - $ano) > 2): ?>
         style="background-color:burlywood;"
@@ -178,33 +182,30 @@
           <div><?= $project['date'] ?></div>
           <div>Project:
             <!-- option - function -->
-            <?=verifyFinished($project)?>
+            <?= verifyFinished($project) ?>
             <!-- <?php echo verifyFinished($project); ?> -->
 
 
             <!-- option #01 - default -->
-            <?php if ($project['finished']): ?>
+            <!-- <?php if ($project['finished']): ?>
               <span style="color: green">✅ Finished</span>
             <?php else: ?>
               <span style="color: red">❌ Not finished</span>
-            <?php endif; ?>
-
-
+            <?php endif; ?> -->
 
             <!-- option #02 - revert logic operation -->
-            <?php if ($project['finished'] == false): ?>
+            <!-- <?php if ($project['finished'] == false): ?>
               <span style="color: red">❌ Not finished</span>
             <?php else: ?>
               <span style="color: green">✅ Finished</span>
-            <?php endif; ?>
-
+            <?php endif; ?> -->
 
             <!-- option #03 - logic abbreviation -->
-            <?php if (! $project['finished']): ?>
+            <!-- <?php if (! $project['finished']): ?>
               <span style="color: red">❌ Not finished</span>
             <?php else: ?>
               <span style="color: green">✅ Finished</span>
-            <?php endif; ?>
+            <?php endif; ?> -->
 
             <?php
             // if( $project['finished'] ) {
@@ -230,28 +231,28 @@
       <div><?= $dateOfProject ?></div>
       <div>Project:
         <!-- option #01 - default -->
-  <?php if ($finished): ?>
+  <!-- <?php if ($finished): ?>
     <span style="color: green">✅ Finished</span>
   <?php else: ?>
     <span style="color: red">❌ Not finished</span>
-  <?php endif; ?>
+  <?php endif; ?> -->
 
 
 
   <!-- option #02 - revert logic operation -->
-  <?php if ($finished == false): ?>
+  <!-- <?php if ($finished == false): ?>
     <span style="color: red">❌ Not finished</span>
   <?php else: ?>
     <span style="color: green">✅ Finished</span>
-  <?php endif; ?>
+  <?php endif; ?> -->
 
 
   <!-- option #03 - logic abbreviation -->
-  <?php if (! $finished): ?>
+  <!-- <?php if (! $finished): ?>
     <span style="color: red">❌ Not finished</span>
   <?php else: ?>
     <span style="color: green">✅ Finished</span>
-  <?php endif; ?>
+  <?php endif; ?> -->
 
   <?php
   // if case the variable is equal 1 than true return
@@ -267,29 +268,29 @@
   ?>
   </div>
   </div>
-  </div> -->
+  </div>
 
   <hr />
 
-  <h1>
+  <!-- <h1>
     <?php
     $greeting = 'hello';
 
     echo $greeting . ", test";
     ?>
-  </h1>
+  </h1> -->
 
   <hr />
 
-  <p>
+  <!-- <p>
     <?php
     echo $greeting . ", " . $name . ". " . $title;
     ?>
-  </p>
+  </p> -->
 
   <hr />
 
-  <p><?= $greeting . ", " . $name . ". " . $title; ?></p>
+  <!-- <p><?= $greeting . ", " . $name . ". " . $title; ?></p> -->
 
   <hr />
 
