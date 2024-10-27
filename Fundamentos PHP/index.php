@@ -127,14 +127,23 @@
     return '<span style="color: red">❌ Not finished (function)</span>';
   };
 
-  function filterProjectsFinished($listOfProjects) {
-    $filters = [];
+  function filterProjects($listOfProjects, $finished = null) {
+    
+    // if return of finished is equal a null, then display all projects
+    if (is_null($finished)) {
+      return $listOfProjects;
+    }
+
+    $filters = []; // initialize a array null
 
     foreach ($listOfProjects as $project) {
-      if($project['finished']) {
+      // ! is_null($finished)
+      if(($project['finished']) === $finished) {
         $filters[] = $project;
       }
     }
+
+    // desafio -> filter by name and date
 
     return $filters;
   }
@@ -145,7 +154,7 @@
 
   <ul>
     <?php
-    foreach ($projects as $project) {
+    foreach ($filterProjects($projects, null) as $project) {
       // echo "<li>" . $project . "</li>";
       echo "<li>{$project['title']}</li>";
       // echo "<li>{$project[1]}</li>";
