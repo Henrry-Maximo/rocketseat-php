@@ -200,6 +200,11 @@
     return $project['year'] === 2024 || $project['year'] === 2021;
   });
 
+  $projectsFilters = array_filter($projects, function ($project) {
+    return $project['year'] === 2024 || $project['year'] === 2021;
+  });
+
+
   // $projectsFilters = filterGeneric($projects, 'year', 2024);
   // $projectsFilters = filterGeneric($projects, 'finished', true);
   ?>
