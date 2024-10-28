@@ -78,31 +78,31 @@
     [
       "title" => "My portfolio",
       "finished" => false,
-      "date" => "2024-10-11",
+      "year" => 2024,
       "describer" => "My first portfolio. Write at PHP and HTML."
     ],
     [
       "title" => "List tasks",
       "finished" => true,
-      "date" => "2024-05-11",
+      "year" => 2024,
       "describer" => "My first portfolio. Write at PHP and HTML."
     ],
     [
       "title" => "Study PHP",
       "finished" => true,
-      "date" => "2024-03-05",
+      "year" => 2024,
       "describer" => "My first portfolio. Write at PHP and HTML."
     ],
     [
       "title" => "Study ReactJS",
       "finished" => true,
-      "date" => "2024-05-11",
+      "year" => 2024,
       "describer" => "My first portfolio. Write at PHP and HTML."
     ],
     [
       "title" => "Study Nodejs",
       "finished" => true,
-      "date" => "2024-05-11",
+      "year" => 2021,
       "describer" => "My first portfolio. Write at PHP and HTML."
     ],
 
@@ -110,6 +110,11 @@
     // "List of Tasks",
     // "Control read of books",
     // "More a task",
+  ];
+
+  $books = [
+    ['name' => 'God of War'],
+    ['name' => 'Harry Potter'],
   ];
 
   function verifyFinished($project)
@@ -129,7 +134,8 @@
   };
 
   // $filterProjects = function ($listOfProjects, $finished = null) {}
-  function filterProjects($listOfProjects, $finished = null) {
+  function filterProjects($listOfProjects, $finished = null)
+  {
 
     // if return of finished is equal a null, then display all projects
     if (is_null($finished)) {
@@ -150,9 +156,61 @@
     return $filters;
   };
 
+  function filterByYear($listOfProjects, $year)
+  {
+    $filters = [];
 
-  $projectsFilters = filterProjects($projects, true);
+    foreach ($listOfProjects as $project) {
+      if (($project['year']) === $year) {
+        $filters[] = $project;
+      }
+    }
+
+    return $filters;
+  };
+
+  // function more generic
+  function filterGeneric($items, $key, $value)
+  {
+    $filters = [];
+
+    foreach ($items as $item) {
+      if (($item[$key]) === $value) {
+        $filters[] = $item;
+      }
+    }
+
+    return $filters;
+  };
+
+  function filterMoreGeneric($items, $function)
+  {
+    $filters = [];
+
+    foreach ($items as $item) {
+      if ($function($item)) {
+        $filters[] = $item;
+      }
+    }
+
+    return $filters;
+  };
+
+  $projectsFilters = filterMoreGeneric($projects, function ($project) {
+    return $project['year'] === 2024 || $project['year'] === 2021;
+  });
+
+  // $projectsFilters = filterGeneric($projects, 'year', 2024);
+  // $projectsFilters = filterGeneric($projects, 'finished', true);
   ?>
+
+  <hr />
+
+  <ul>
+    <?php foreach (filterGeneric($books, 'name', 'Harry Potter') as $book): ?>
+      <li><?= $book['name'] ?></li>
+    <?php endforeach; ?>
+  </ul>
 
   <hr />
 
@@ -179,7 +237,7 @@
         <h2><?= $project['title'] ?></h2>
         <p><?= $project['describer'] ?></p>
         <div>
-          <div><?= $project['date'] ?></div>
+          <div><?= $project['year'] ?></div>
           <div>Project:
             <!-- option - function -->
             <?= verifyFinished($project) ?>
