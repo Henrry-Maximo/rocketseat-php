@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My portfolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My portfolio</title>
 
-  <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <style>
+    <!-- <style>
     div, header, footer, section {
       /* height: 10px; */
       border: 1px red dashed;
@@ -35,38 +35,68 @@
       background-color: black;
     }
 
-  </style>
-</head>
-<body>
-  <header>
-    <!-- logo -->
-    <div class="text-red-500 font-bold border rounded-lg p-2 m-2">
-      logo
-    </div>
+  </style> -->
+  </head>
+  <body class="bg-slate-900 text-gray-200">
+    <header
+      class="mx-auto max-w-screen-lg flex items-center justify-between px-3 py-6"
+    >
+      <!-- logo -->
+      <div class="font-bold text-xl text-cyan-600">🐧 My Portfolio...</div>
 
-    <!-- links -->
-    <div></div>
-  </header>
+      <!-- links -->
+      <div>
+        <ul class="flex gap-x-3 font-medium text-gray-200">
+          <li><a href="#" class="hover:underline">Projetcs</a></li>
+          <li><a href="#" class="hover:underline">Github</a></li>
+          <li><a href="#" class="hover:underline">LinkedIn</a></li>
+          <li><a href="#" class="hover:underline">Twitter</a></li>
+        </ul>
+      </div>
+    </header>
 
-  <section>
-    <!-- title and description -->
-    <div></div>
+    <main class="mx-auto max-w-screen-lg min-h-20">
+      <section>
+        <!-- title and description -->
+        <div class="w-2/3">
+          <h1 class="text-3xl font-bold">Hello, my name is Henrique!</h1>
+          <p class="text-xl leading-6 mt-6">
+            I am Henrique Maximo, 20 years old, from São Paulo. I love
+            programming and constantly study, adherent to good practices and
+            agile methodologies. My skills include JavaScript, Node.js, PHP,
+            HTML, Laravel, CSS, ReactJS, and MySQL. On GitHub, I share projects
+            that reflect my learning. I believe that code goes beyond: it
+            involves understanding users and creating meaningful solutions. I am
+            always ready for challenges and constant growth. 🚀 Additionally, I
+            have a special passion for Japan.
+          </p>
+          
+          <ul class="flex gap-x-3 mt-3">
+            <li><a href="#" class="hover:underline">X</a></li>
+            <li><a href="#" class="hover:underline">F</a></li>
+            <li><a href="#" class="hover:underline">L</a></li>
+            <li><a href="#" class="hover:underline">Y</a></li>
+          </ul>
+        </div>
 
-    <!-- image -->
-    <div></div>
-  </section>
+        <!-- image -->
+        <div class="w-1/3 flex items-center justify-center">
+          <div>foto</div>
+        </div>
+      </section>
 
-  <section>
-    <!-- project -->
-    <div></div>
-  </section>
+      <section>
+        <!-- project -->
+        <div></div>
+      </section>
+    </main>
 
-  <footer>
-    <!-- date -->
-    <div></div>
+    <footer>
+      <!-- date -->
+      <div></div>
 
-    <!-- links -->
-    <div></div>
-  </footer>
-</body>
+      <!-- links -->
+      <div></div>
+    </footer>
+  </body>
 </html>
