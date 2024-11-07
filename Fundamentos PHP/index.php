@@ -60,7 +60,7 @@
   $subtitle = "Welcome my portfolio!!";
   $ano = 2020;
   // $title = "Welcome!";
-
+  
   $project = "My Port!!";
   $finished = false; // true = 1 / false = 0
   $dateOfProject = "2024-10-11";
@@ -73,7 +73,7 @@
   //   "Control read of books",
   //   "More a task",
   // ];
-
+  
   $projects = [
     [
       "title" => "My portfolio",
@@ -103,7 +103,8 @@
       "title" => "Study Nodejs",
       "finished" => true,
       "year" => 2021,
-      "describer" => "My first portfolio. Write at PHP and HTML."
+      "describer" => "My first portfolio. Write at PHP and HTML.",
+      "stack" => ["PHP", "HTML", "CSS", "JS"]
     ],
 
     // "My portofilo",
@@ -125,13 +126,14 @@
     // } else {
     //   return '<span style="color: red">❌ Not finished (function)</span>';
     // }
-
+  
     if ($project['finished']) {
       return '<span style="color: green">✅ Finished (function)</span>';
     }
 
     return '<span style="color: red">❌ Not finished (function)</span>';
-  };
+  }
+  ;
 
   // $filterProjects = function ($listOfProjects, $finished = null) {}
   function filterProjects($listOfProjects, $finished = null)
@@ -143,7 +145,7 @@
     }
 
     $filters = []; // initialize a array null
-
+  
     foreach ($listOfProjects as $project) {
       // ! is_null($finished)
       if (($project['finished']) === $finished) {
@@ -152,9 +154,10 @@
     }
 
     // desafio -> filter by name and date
-
+  
     return $filters;
-  };
+  }
+  ;
 
   function filterByYear($listOfProjects, $year)
   {
@@ -167,7 +170,8 @@
     }
 
     return $filters;
-  };
+  }
+  ;
 
   // function more generic
   function filterGeneric($items, $key, $value)
@@ -181,7 +185,8 @@
     }
 
     return $filters;
-  };
+  }
+  ;
 
   function filterMoreGeneric($items, $function)
   {
@@ -194,7 +199,8 @@
     }
 
     return $filters;
-  };
+  }
+  ;
 
   $projectsFilters = filterMoreGeneric($projects, function ($project) {
     return $project['year'] === 2024 || $project['year'] === 2021;
@@ -234,10 +240,7 @@
   <!-- using if  -->
   <ul>
     <?php foreach ($projectsFilters as $project): ?>
-      <div
-        <?php if ((2024 - $ano) > 2): ?>
-        style="background-color:burlywood;"
-        <?php endif; ?>>
+      <div <?php if ((2024 - $ano) > 2): ?> style="background-color:burlywood;" <?php endif; ?>>
 
         <h2><?= $project['title'] ?></h2>
         <p><?= $project['describer'] ?></p>
@@ -264,7 +267,7 @@
             <?php endif; ?> -->
 
             <!-- option #03 - logic abbreviation -->
-            <!-- <?php if (! $project['finished']): ?>
+            <!-- <?php if (!$project['finished']): ?>
               <span style="color: red">❌ Not finished</span>
             <?php else: ?>
               <span style="color: green">✅ Finished</span>
@@ -311,7 +314,7 @@
 
 
   <!-- option #03 - logic abbreviation -->
-  <!-- <?php if (! $finished): ?>
+  <!-- <?php if (!$finished): ?>
     <span style="color: red">❌ Not finished</span>
   <?php else: ?>
     <span style="color: green">✅ Finished</span>
@@ -322,7 +325,7 @@
   // ✅
   // if not
   // ❌
-
+  
   // if( $finished ) {
   //   echo "✅ Finalizado";
   // } else {
