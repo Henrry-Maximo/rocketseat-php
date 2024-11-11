@@ -1,3 +1,12 @@
+<?php
+$itens = [
+  ['href' => '#', 'src' => 'assets/twitter.png', 'alt' => 'Twitter Logo'],
+  ['href' => '#', 'src' => 'assets/facebook.png', 'alt' => 'Facebook Logo'],
+  ['href' => '#', 'src' => 'assets/linkedin.png', 'alt' => 'LinkedIn Logo'],
+  ['href' => '#', 'src' => 'assets/youtube.png', 'alt' => 'YouTube Logo']
+];
+?>
+
 <section class="flex gap-x-3">
   <!-- title and description -->
   <div class="w-2/3">
@@ -14,30 +23,12 @@
     </p>
 
     <ul class="flex gap-x-3 mt-3">
-      <li>
-        <a href="#" class="hover:underline" target="_blank"><img
-            class="w-8 hover:animate-bounce"
-            src="./assets/twitter.png"
-            alt="Logo Twitter" /></a>
-      </li>
-      <li>
-        <a href="#" class="hover:underline" target="_blank"><img
-            class="w-8 hover:animate-bounce"
-            src="./assets/facebook.png"
-            alt="Logo Facebook" /></a>
-      </li>
-      <li>
-        <a href="#" class="hover:underline" target="_blank"><img
-            class="w-8 hover:animate-bounce"
-            src="./assets/linkedin.png"
-            alt="Logo LinkedIn" /></a>
-      </li>
-      <li>
-        <a href="#" class="hover:underline" target="_blank"><img
-            class="w-8 hover:animate-bounce"
-            src="./assets/youtube.png"
-            alt="Logo YouTube" /></a>
-      </li>
+      <?php foreach ($itens as $item): ?>
+        <li><a href="<?= $item['href'] ?>" target="_blank" class="hover:underline"><img
+              class="w-8 hover:animate-bounce"
+              src=<?= $item['src'] ?>
+              alt=<?= $item['alt'] ?> /></a></li>
+      <?php endforeach; ?>
     </ul>
   </div>
 
