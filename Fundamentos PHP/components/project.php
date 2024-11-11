@@ -2,6 +2,14 @@
 $projects = [
   [
     "title" => "My portfolio",
+    "finished" => true,
+    "year" => 2024,
+    "describer" => "My first portfolio. Write at PHP and HTML.",
+    "stack" => ["PHP", "HTML", "CSS", "JS"],
+    "img" => "./assets/projects/myport.png"
+  ],
+  [
+    "title" => "List tasks",
     "finished" => false,
     "year" => 2024,
     "describer" => "My first portfolio. Write at PHP and HTML.",
@@ -9,16 +17,8 @@ $projects = [
     "img" => ""
   ],
   [
-    "title" => "List tasks",
-    "finished" => true,
-    "year" => 2024,
-    "describer" => "My first portfolio. Write at PHP and HTML.",
-    "stack" => ["PHP", "HTML", "CSS", "JS"],
-    "img" => ""
-  ],
-  [
     "title" => "Study PHP",
-    "finished" => true,
+    "finished" => false,
     "year" => 2024,
     "describer" => "My first portfolio. Write at PHP and HTML.",
     "stack" => ["PHP", "HTML", "CSS", "JS"],
@@ -34,7 +34,7 @@ $projects = [
   ],
   [
     "title" => "Study Nodejs",
-    "finished" => true,
+    "finished" => false,
     "year" => 2021,
     "describer" => "My first portfolio. Write at PHP and HTML.",
     "stack" => ["PHP", "HTML", "CSS", "JS"],
