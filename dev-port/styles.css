@@ -1,0 +1,31 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #16181D;
+  color: #E2E4E9;
+  font-family: Arial, sans-serif;
+  overflow: auto;
+  scroll-behavior: smooth; /* suave */
+}
+
+#background {
+  background-image: url('assets/Background_Intro.jpg');
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page {
+  height: 100vh; /* ocupa 100% da altura da viewport */
+  width: 434px;
+  /* margin: 0 auto; */
+
+  display: flex;
+  align-items: center; /* verticalmente */
+  justify-content: center; /* horizontalmente */
+}
