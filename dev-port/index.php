@@ -11,7 +11,7 @@
 
 <body>
   <div id="background">
-    <section class="page">
+    <main class="page">
       <header>
         <div>
           <img src="" alt="photo-developer-image" />
@@ -25,22 +25,24 @@
       </header>
 
       <footer>
-        <ul>
-          <li>GitHub</li>
-          <li>PHP</li>
-          <li>CSS</li>
-          <li>HTML</li>
-          <li>Javascript</li>
-        </ul>
+        <nav>
+          <ul>
+            <li>GitHub</li>
+            <li>PHP</li>
+            <li>CSS</li>
+            <li>HTML</li>
+            <li>Javascript</li>
+          </ul>
+        </nav>
       </footer>
-    </section>
+    </main>
   </div>
 
 
   <section class="page">
     <div>
       <span>Meu Trabalho</span>
-      <p>Veja os projetos em destaque</p>
+      <p><strong>Veja os projetos em destaque</strong></p>
     </div>
 
     <div>
@@ -53,12 +55,14 @@
           <div>
             <span>Travelgram</span>
             <p>Rede social onde as pessoas mostram os registros de suas viagens pelo mundo</p>
-            <ul>
-              <li>PHP</li>
-              <li>CSS</li>
-              <li>HTML</li>
-              <li>Javascript</li>
-            </ul>
+            <nav>
+              <ul>
+                <li>PHP</li>
+                <li>CSS</li>
+                <li>HTML</li>
+                <li>Javascript</li>
+              </ul>
+            </nav>
           </div>
         </li>
       </ul>
@@ -68,7 +72,7 @@
   <section class="page">
     <div>
       <span>Contato</span>
-      <p>Gostou do meu trabalho?</p>
+      <p><strong>Gostou do meu trabalho?</strong></p>
       <p>Entre em contato ou acompanhe as minhas redes sociais!</p>
     </div>
 
@@ -81,7 +85,9 @@
 
           <div>
             <span>Linkedin</span>
-            <img src="" alt="photo-arrow-image" />
+            <a href="www.linkedin.com.br">
+              <img src="" alt="photo-arrow-image" />
+            </a>
           </div>
         </li>
       </ul>
