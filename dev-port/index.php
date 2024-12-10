@@ -17,10 +17,8 @@
 <body>
   <div id="background">
     <main class="page">
-      <header>
-        <div>
-          <img src="" alt="photo-developer-image" />
-        </div>
+      <header class="root-header">
+        <img class="profile-logo" src="https://github.com/henrry-maximo.png" alt="developer-profile-img" />
 
         <section>
           <p>Hello World! Meu nome é <span>Henrique Maximo</span> e sou</p>

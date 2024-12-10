@@ -29,3 +29,20 @@ body {
   align-items: center; /* verticalmente */
   justify-content: space-between;
 }
+
+.root-header {
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+  gap: 2rem;
+}
+
+.profile-logo {
+  /* 1rem = 16px (32 + 8 = 40) */
+  height: 4.5rem; 
+  width: 4.5rem;
+  border-radius: 100%;
+  padding: 2px;
+  border: 2px solid #E3646E;
+}
