@@ -17,7 +17,7 @@
 <body>
   <div id="background">
     <main class="page">
-      <header class="root-header">
+      <header class="content-header">
         <img class="profile-logo" src="https://github.com/henrry-maximo.png" alt="developer-profile-img" />
 
         <section>
@@ -29,7 +29,8 @@
       </header>
 
       <footer>
-        <nav>
+        <h2>Tecnologias e Links</h2>
+        <nav class="">
           <ul>
             <li>GitHub</li>
             <li>PHP</li>
