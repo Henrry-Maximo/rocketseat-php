@@ -17,10 +17,10 @@
 <body>
   <div id="background">
     <main class="page">
-      <header class="content-header">
+      <header class="header">
         <img class="profile-logo" src="https://github.com/henrry-maximo.png" alt="developer-profile-img" />
 
-        <section>
+        <section class="">
           <p>Hello World! Meu nome é <span>Henrique Maximo</span> e sou</p>
           <h1>Desenvolvedor PHP</h1>
           <p>Transformo necessidades em aplicações reais, evolventes e funcionais. Desenvolvo sistemas através da minha
@@ -29,14 +29,13 @@
       </header>
 
       <footer>
-        <h2>Tecnologias e Links</h2>
-        <nav class="">
-          <ul>
-            <li>GitHub</li>
-            <li>PHP</li>
-            <li>CSS</li>
-            <li>HTML</li>
-            <li>Javascript</li>
+        <nav>
+          <ul class="description-skills">
+            <li class="skills">GitHub</li>
+            <li class="skills">PHP</li>
+            <li class="skills">CSS</li>
+            <li class="skills">HTML</li>
+            <li class="skills">Javascript</li>
           </ul>
         </nav>
       </footer>

@@ -6,15 +6,17 @@
 }
 
 body {
-  background-color: #16181D;
-  color: #E2E4E9;
+  color: #e2e4e9;
+  background-color: #16181d;
+  
   font-family: Arial, sans-serif;
+  
   overflow: auto;
   scroll-behavior: smooth; /* suave */
 }
 
 #background {
-  background-image: url('assets/Background_Intro.jpg');
+  background-image: url("assets/Background_Intro.jpg");
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -27,21 +29,14 @@ body {
   display: flex;
   flex-direction: column;
 
-  align-items: center; /* verticalmente */
-  justify-content: center;
+  align-items: center;
+  justify-content: center; /* verticalmente */
 
   gap: 2rem;
 }
 
-.content-header {
-  display: flex;
-  flex-direction: column;
-
-  text-align: center;
-  gap: 2rem;
-}
-
-.content-header {
+/* page: 01 */
+.header {
   display: flex;
   flex-direction: column;
 
@@ -51,9 +46,24 @@ body {
 
 .profile-logo {
   /* 1rem = 16px (32 + 8 = 40) */
-  height: 4.5rem; 
-  width: 4.5rem;
-  border-radius: 100%;
+  height: 7rem;
+  width: 7rem;
   padding: 2px;
-  border: 2px solid #E3646E;
+
+  border-radius: 100%;
+  border: 2px solid #e3646e;
+}
+
+.description-skills {
+  display: flex;
+  flex-direction: row;
+
+  gap: 0.75rem;
+}
+
+.skills {
+  padding: 5px 0.75rem;
+  list-style: none;
+
+  border-radius: 999px;
 }
