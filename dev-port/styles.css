@@ -22,6 +22,12 @@ body {
   background-size: cover;
 }
 
+#space-elements {
+  display: flex;
+
+  gap: 5rem;
+}
+
 .page {
   height: 100vh;
   width: 75%;
@@ -32,7 +38,14 @@ body {
   align-items: center;
   justify-content: center; /* verticalmente */
 
-  gap: 2rem;
+  gap: 1rem;
+}
+
+#space-elements {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5rem;
 }
 
 /* page: 01 */
@@ -40,8 +53,10 @@ body {
   display: flex;
   flex-direction: column;
 
+  width: 680px;
+
   text-align: center;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 .profile-logo {
@@ -52,6 +67,41 @@ body {
 
   border-radius: 100%;
   border: 2px solid #e3646e;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.8rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.7rem;
+}
+
+.wrapper .my-world {
+  font-family: "Inconsolata", serif;
+  font-size: 20px;
+
+  span {
+    color: #e3646e;
+  }
+}
+
+.wrapper .my-job {
+  font-family: "Asap", serif;
+  font-size: 56px;
+}
+
+.summary .my-desc {
+  font-family: "Maven Pro", serif;
+  font-size: 14px;
+
+  color: #878EA1;
 }
 
 .description-skills {
@@ -66,4 +116,32 @@ body {
   list-style: none;
 
   border-radius: 999px;
+
+  a {
+    color: #16181D;
+    text-decoration: none;
+  }
 }
+
+#color-green {
+  background-color: #82BC4F;
+}
+
+#color-purple {
+  background-color: #BB72E9;
+}
+
+#color-blue {
+  background-color: #3996DB;
+}
+
+#color-red {
+  background-color: #E3646E;
+}
+
+#color-yellow {
+  background-color: #EABD5F;
+}
+
+
+

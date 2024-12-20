@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,14 +17,17 @@
 
 <body>
   <div id="background">
-    <main class="page">
+    <main class="page" id="space-elements">
       <header class="header">
         <img class="profile-logo" src="https://github.com/henrry-maximo.png" alt="developer-profile-img" />
 
-        <section class="">
-          <p>Hello World! Meu nome é <span>Henrique Maximo</span> e sou</p>
-          <h1>Desenvolvedor PHP</h1>
-          <p>Transformo necessidades em aplicações reais, evolventes e funcionais. Desenvolvo sistemas através da minha
+        <section class="summary">
+          <div class="wrapper">
+            <p class="my-world">Hello World! Meu nome é <span>Henrique Maximo</span> e sou</p>
+            <h1 class="my-job">Desenvolvedor PHP</h1>
+          </div>
+
+          <p class="my-desc">Transformo necessidades em aplicações reais, evolventes e funcionais. Desenvolvo sistemas através da minha
             paixão pela tecnologia, contribuindo com soluções inovadoras e eficazes para desafios complexos.</p>
         </section>
       </header>
@@ -31,11 +35,11 @@
       <footer>
         <nav>
           <ul class="description-skills">
-            <li class="skills">GitHub</li>
-            <li class="skills">PHP</li>
-            <li class="skills">CSS</li>
-            <li class="skills">HTML</li>
-            <li class="skills">Javascript</li>
+            <li class="skills" id="color-green"><a href="" target="_blank">GitHub</a></li>
+            <li class="skills" id="color-purple"><a href="" target="_blank">PHP</a></li>
+            <li class="skills" id="color-blue"><a href="" target="_blank">CSS</a></li>
+            <li class="skills" id="color-red"><a href="" target="_blank">HTML</a></li>
+            <li class="skills" id="color-yellow"><a href="" target="_blank">Javascript</a></li>
           </ul>
         </nav>
       </footer>
