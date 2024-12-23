@@ -16,7 +16,7 @@ body {
 }
 
 #background {
-  background-image: url("assets/Background_Intro.jpg");
+  background-image: url("assets/background.jpg");
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -163,6 +163,69 @@ body {
 
 #color-yellow:hover {
   background-color: #e29f10;
+}
+
+/* page: 02 */
+
+#my-jobs {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5rem;
+}
+
+.header-jobs {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.6rem;
+
+  span {
+    font-family: "Inconsolata", serif;
+    font-size: 20px;
+
+    color: #E3646E;
+  }
+
+  p {
+    font-family: "Asap", serif;
+    font-size: 24px;
+
+    font-weight: bold;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+
+  gap: 1.6rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  width: 662px;
+
+  background-color: #292C34;
+
+  padding: 0.7rem;
+  border-radius: 12px;
+}
+
+.card img {
+  height: 156px;
+  width: 224px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1rem;
+
+  padding: 4px 8px;
+  /* justify-content: space-between; */
 }
 
 

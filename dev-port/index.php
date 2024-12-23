@@ -24,7 +24,7 @@
         <section class="summary">
           <div class="wrapper">
             <p class="my-world">Hello World! Meu nome é <span>Henrique Maximo</span> e sou</p>
-            <h1 class="my-job">Desenvolvedor PHP</h1>
+            <h1 class="my-job">Desenvolvedor NodeJS</h1>
           </div>
 
           <p class="my-desc">Transformo necessidades em aplicações reais, evolventes e funcionais. Desenvolvo sistemas através da minha
@@ -39,7 +39,7 @@
             <li class="skills" id="color-purple">PHP</li>
             <li class="skills" id="color-blue">CSS</li>
             <li class="skills" id="color-red">HTML</li>
-            <li class="skills" id="color-yellow">Javascript</li>
+            <li class="skills" id="color-yellow">Javascript (NodeJS)</li>
           </ul>
         </nav>
       </footer>
@@ -47,34 +47,32 @@
   </div>
 
 
-  <section class="page">
-    <div>
+  <section class="page" id="my-jobs">
+    <header class="header-jobs">
       <span>Meu Trabalho</span>
-      <p><strong>Veja os projetos em destaque</strong></p>
-    </div>
+      <p>Veja os projetos em destaque</p>
+    </header>
 
-    <div>
-      <ul>
-        <li>
-          <div>
-            <img src="" alt="photo-project-image" />
-          </div>
+    <ul class="grid">
+      <li class="card">
+        <img src="./assets/project_travelgram.png" alt="photo-project-image" />
 
+        <div class="details">
           <div>
             <span>Travelgram</span>
             <p>Rede social onde as pessoas mostram os registros de suas viagens pelo mundo</p>
-            <nav>
-              <ul>
-                <li>PHP</li>
-                <li>CSS</li>
-                <li>HTML</li>
-                <li>Javascript</li>
-              </ul>
-            </nav>
           </div>
-        </li>
-      </ul>
-    </div>
+
+          <ul class="description-skills">
+            <li class="skills" id="color-purple">PHP</li>
+            <li class="skills" id="color-blue">CSS</li>
+            <li class="skills" id="color-red">HTML</li>
+            <li class="skills" id="color-yellow">Javascript</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+
   </section>
 
   <section class="page">
