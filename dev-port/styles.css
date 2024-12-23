@@ -112,13 +112,15 @@ body {
 }
 
 .skills {
+  color: white;
+
   padding: 5px 0.75rem;
   list-style: none;
 
   border-radius: 999px;
 
   a {
-    color: #16181D;
+    color: white;
     text-decoration: none;
   }
 }
@@ -127,20 +129,40 @@ body {
   background-color: #82BC4F;
 }
 
+#color-green:hover {
+  background-color: #56b007;
+}
+
 #color-purple {
   background-color: #BB72E9;
+}
+
+#color-purple:hover {
+  background-color: #9d2ee2;
 }
 
 #color-blue {
   background-color: #3996DB;
 }
 
+#color-blue:hover {
+  background-color: #005fa8;
+}
+
 #color-red {
   background-color: #E3646E;
 }
 
+#color-red:hover {
+  background-color: #dc1929;
+}
+
 #color-yellow {
   background-color: #EABD5F;
+}
+
+#color-yellow:hover {
+  background-color: #e29f10;
 }
 
 

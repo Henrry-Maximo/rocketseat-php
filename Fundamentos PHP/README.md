@@ -1,4 +1,0 @@
-
-# GUIDE PHP COMMANDS
-
-- php -S localhost:8888 -d auto_prepend_file=server.php

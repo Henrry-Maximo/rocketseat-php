@@ -35,11 +35,11 @@
       <footer>
         <nav>
           <ul class="description-skills">
-            <li class="skills" id="color-green"><a href="" target="_blank">GitHub</a></li>
-            <li class="skills" id="color-purple"><a href="" target="_blank">PHP</a></li>
-            <li class="skills" id="color-blue"><a href="" target="_blank">CSS</a></li>
-            <li class="skills" id="color-red"><a href="" target="_blank">HTML</a></li>
-            <li class="skills" id="color-yellow"><a href="" target="_blank">Javascript</a></li>
+            <li class="skills" id="color-green"><a href="https://github.com/Henrry-Maximo" target="_blank">GitHub</a></li>
+            <li class="skills" id="color-purple">PHP</li>
+            <li class="skills" id="color-blue">CSS</li>
+            <li class="skills" id="color-red">HTML</li>
+            <li class="skills" id="color-yellow">Javascript</li>
           </ul>
         </nav>
       </footer>
