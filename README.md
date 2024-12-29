@@ -8,3 +8,8 @@
   - auto_prepend_file=server.php:
     - Esta diretiva indica que o arquivo server.php será automaticamente incluído 
     antes de qualquer outro script.
+
+https://www.php.net/manual/pt_BR/features.commandline.php
+https://www.php.net/manual/pt_BR/features.commandline.webserver.php
+https://en.wikipedia.org/wiki/Port_(computer_networking)
+https://www.php.net/manual/pt_BR/ini.core.php#ini.auto-prepend-file
