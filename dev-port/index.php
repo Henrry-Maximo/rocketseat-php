@@ -3,7 +3,7 @@
 $listOfProjectsInMemory = [
   [
     "img" => "./assets/project_travelgram.png",
-    "title" => "TNewsravelgram",
+    "title" => "Travelgram",
     "description" => "Rede social onde as pessoas mostram os registros de suas viagens pelo mundo",
     "stack" => [
       "PHP",
@@ -13,7 +13,7 @@ $listOfProjectsInMemory = [
     ],
   ],
   [
-    "img" => "./assets/project_tect_news.png",
+    "img" => "./assets/project_tech_news.png",
     "title" => "Tech News",
     "description" => "Homepage de um portal de notícias sobre a área de tecnologia",
     "stack" => [
@@ -126,24 +126,28 @@ $listOfProjectsInMemory = [
       <p>Veja os projetos em destaque</p>
     </header>
 
+
     <ul class="grid">
-      <li class="card">
-        <img src="./assets/project_travelgram.png" alt="photo-project-image" />
+      <?php foreach ($listOfProjectsInMemory as $project): ?>
+        <li class="card">
+          <img src="<?= $project['img'] ?>" alt="photo-project-image" />
 
-        <article class="details">
-          <div class="description">
-            <span>Travelgram</span>
-            <p>Rede social onde as pessoas mostram os registros de suas viagens pelo mundo</p>
-          </div>
+          <article class="details">
+            <div class="description">
+              <span><?= $project['title'] ?></span>
+              <p><?= $project['description'] ?></p>
+            </div>
 
-          <ul class="description-skills">
-            <li class="skills" id="color-purple">PHP</li>
-            <li class="skills" id="color-blue">CSS</li>
-            <li class="skills" id="color-red">HTML</li>
-            <li class="skills" id="color-yellow">Javascript</li>
-          </ul>
-        </article>
-      </li>
+            <ul class="description-skills">
+              <li class="skills" id="color-purple">PHP</li>
+              <li class="skills" id="color-blue">CSS</li>
+              <li class="skills" id="color-red">HTML</li>
+              <li class="skills" id="color-yellow">Javascript</li>
+            </ul>
+          </article>
+        </li>
+
+      <?php endforeach; ?>
     </ul>
 
   </section>
