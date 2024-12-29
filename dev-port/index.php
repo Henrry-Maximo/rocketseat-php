@@ -1,3 +1,76 @@
+<?php
+
+$listOfProjectsInMemory = [
+  [
+    "img" => "./assets/project_travelgram.png",
+    "title" => "TNewsravelgram",
+    "description" => "Rede social onde as pessoas mostram os registros de suas viagens pelo mundo",
+    "stack" => [
+      "PHP",
+      "CSS",
+      "HTML",
+      "JAVASCRIPT"
+    ],
+  ],
+  [
+    "img" => "./assets/project_tect_news.png",
+    "title" => "Tech News",
+    "description" => "Homepage de um portal de notícias sobre a área de tecnologia",
+    "stack" => [
+      "PHP",
+      "CSS",
+      "HTML",
+      "JAVASCRIPT"
+    ],
+  ],
+  [
+    "img" => "./assets/project_tourism.png",
+    "title" => "Página de turismo",
+    "description" => "Homepage de um portal de notícias sobre a área de tecnologia",
+    "stack" => [
+      "PHP",
+      "CSS",
+      "HTML",
+      "JAVASCRIPT"
+    ],
+  ],
+  [
+    "img" => "./assets/project_revenue.png",
+    "title" => "Página de receita",
+    "description" => "Página com o passo a passo de uma receita para cupcakes",
+    "stack" => [
+      "PHP",
+      "CSS",
+      "HTML",
+      "JAVASCRIPT"
+    ],
+  ],
+  [
+    "img" => "./assets/project_order.png",
+    "title" => "Refund",
+    "description" => "Um sistema para pedido e acompanhamento de reembolso ",
+    "stack" => [
+      "PHP",
+      "CSS",
+      "HTML",
+      "JAVASCRIPT"
+    ],
+  ],
+  [
+    "img" => "./assets/project_zingen.png",
+    "title" => "Zingen",
+    "description" => "Landing Page completa e responsiva de um aplicativo de Karaokê",
+    "stack" => [
+      "PHP",
+      "CSS",
+      "HTML",
+      "JAVASCRIPT"
+    ],
+  ],
+]
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -57,8 +130,8 @@
       <li class="card">
         <img src="./assets/project_travelgram.png" alt="photo-project-image" />
 
-        <div class="details">
-          <div>
+        <article class="details">
+          <div class="description">
             <span>Travelgram</span>
             <p>Rede social onde as pessoas mostram os registros de suas viagens pelo mundo</p>
           </div>
@@ -69,7 +142,7 @@
             <li class="skills" id="color-red">HTML</li>
             <li class="skills" id="color-yellow">Javascript</li>
           </ul>
-        </div>
+        </article>
       </li>
     </ul>
 
