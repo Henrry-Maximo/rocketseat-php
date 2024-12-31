@@ -250,5 +250,62 @@ body {
   }
 }
 
+/* page: 03 */
 
+.informations {
+  font-family: 'Asap', serif;
+  display: grid;
+  font-size: 16px;
+  line-height: 140%;
+  
+  gap: 8px;
+}
 
+.informations span {
+  font-family: 'Inconsolata', serif;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 120%;
+
+  color: #BB72E9;
+}
+
+.question {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 120%;
+}
+
+.container-items {
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+}
+
+.container-items .item {
+  display: flex;
+  flex-direction: row;
+
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+  gap: 20px;
+
+  padding: 20px;
+  background-color: #292C34;
+
+  list-style: none;
+}
+
+.container-items .item .media {
+  width: 28px;
+  height: 28px;
+}
+
+.container-items .item .link {
+  width: 20px;
+  height: 20px;
+}

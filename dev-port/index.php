@@ -153,28 +153,24 @@ $listOfProjectsInMemory = [
   </section>
 
   <section class="page">
-    <div>
+    <div class="informations">
       <span>Contato</span>
-      <p><strong>Gostou do meu trabalho?</strong></p>
+      <p class="question">Gostou do meu trabalho?</p>
       <p>Entre em contato ou acompanhe as minhas redes sociais!</p>
     </div>
 
-    <div>
-      <ul>
-        <li>
-          <div>
-            <img src="" alt="photo-project-image" />
-          </div>
+    <ul class="container-items">
+      <li class="item">
+        <img class="media" src="./assets/icons/linkedin.png" alt="linkedin logo" />
 
-          <div>
-            <span>Linkedin</span>
-            <a href="www.linkedin.com.br">
-              <img src="" alt="photo-arrow-image" />
-            </a>
-          </div>
-        </li>
-      </ul>
-    </div>
+        <div>
+          <span>Linkedin</span>
+          <a href="www.linkedin.com.br">
+            <img class="link" src="./assets/icons/arrow.png" alt="linkedin" />
+          </a>
+        </div>
+      </li>
+    </ul>
   </section>
 </body>
 
