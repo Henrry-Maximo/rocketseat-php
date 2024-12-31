@@ -309,3 +309,11 @@ body {
   width: 20px;
   height: 20px;
 }
+
+.container-items .item .social-description span {
+  font-family: 'Maven' serif;
+  font-size: 16px;
+
+  line-height: 140%;
+  font-weight: 500;
+}

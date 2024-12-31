@@ -163,7 +163,7 @@ $listOfProjectsInMemory = [
       <li class="item">
         <img class="media" src="./assets/icons/linkedin.png" alt="linkedin logo" />
 
-        <div>
+        <div class="social-description" >
           <span>Linkedin</span>
           <a href="www.linkedin.com.br">
             <img class="link" src="./assets/icons/arrow.png" alt="linkedin" />
