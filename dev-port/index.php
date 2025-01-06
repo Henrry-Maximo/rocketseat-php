@@ -170,6 +170,39 @@ $listOfProjectsInMemory = [
           </a>
         </div>
       </li>
+
+      <li class="item">
+        <img class="media" src="./assets/icons/instagram.png" alt="instagram logo" />
+
+        <div class="social-description" >
+          <span>Instagram</span>
+          <a href="www.instagram.com.br">
+            <img class="link" src="./assets/icons/arrow.png" alt="instagram" />
+          </a>
+        </div>
+      </li>
+
+      <li class="item">
+        <img class="media" src="./assets/icons/github.png" alt="github logo" />
+
+        <div class="social-description" >
+          <span>Github</span>
+          <a href="www.github.com.br">
+            <img class="link" src="./assets/icons/arrow.png" alt="github" />
+          </a>
+        </div>
+      </li>
+
+      <li class="item">
+        <img class="media" src="./assets/icons/email.png" alt="email logo" />
+
+        <div class="social-description" >
+          <span>E-mail</span>
+          <a href="www.email.com.br">
+            <img class="link" src="./assets/icons/arrow.png" alt="email" />
+          </a>
+        </div>
+      </li>
     </ul>
   </section>
 </body>
