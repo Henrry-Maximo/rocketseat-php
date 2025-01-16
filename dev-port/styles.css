@@ -285,25 +285,22 @@ body {
 
 .container-items .item {
   display: flex;
-  flex-direction: row;
+  width: 25rem;
 
-  text-align: center;
   align-items: center;
   justify-content: center;
+  list-style: none;
 
   border-radius: 8px;
   gap: 20px;
 
-  padding: 20px;
-  width: 100%;
+  padding: 1.5rem;
   background-color: #292C34;
-
-  list-style: none;
 }
 
 .container-items .item .media {
   width: 28px;
-  height: 28px;
+  margin: 0;
 }
 
 .container-items .item .link {
@@ -313,7 +310,7 @@ body {
   margin-left: 1rem;
 }
 
-.container-items .item .social-description span {
+.container-items .item span {
   font-family: 'Maven' serif;
   font-size: 16px;
 

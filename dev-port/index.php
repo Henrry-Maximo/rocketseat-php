@@ -163,45 +163,37 @@ $listOfProjectsInMemory = [
       <li class="item">
         <img class="media" src="./assets/icons/linkedin.png" alt="linkedin logo" />
 
-        <div class="social-description" >
-          <span>Linkedin</span>
-          <a href="www.linkedin.com.br">
-            <img class="link" src="./assets/icons/arrow.png" alt="linkedin" />
-          </a>
-        </div>
+        <span>Linkedin</span>
+        <a href="www.linkedin.com.br">
+          <img class="link" src="./assets/icons/arrow.png" alt="linkedin" />
+        </a>
       </li>
 
       <li class="item">
         <img class="media" src="./assets/icons/instagram.png" alt="instagram logo" />
 
-        <div class="social-description" >
-          <span>Instagram</span>
-          <a href="www.instagram.com.br">
-            <img class="link" src="./assets/icons/arrow.png" alt="instagram" />
-          </a>
-        </div>
+        <span>Instagram</span>
+        <a href="www.instagram.com.br">
+          <img class="link" src="./assets/icons/arrow.png" alt="instagram" />
+        </a>
       </li>
 
       <li class="item">
         <img class="media" src="./assets/icons/github.png" alt="github logo" />
 
-        <div class="social-description" >
-          <span>Github</span>
-          <a href="www.github.com.br">
-            <img class="link" src="./assets/icons/arrow.png" alt="github" />
-          </a>
-        </div>
+        <span>Github</span>
+        <a href="www.github.com.br">
+          <img class="link" src="./assets/icons/arrow.png" alt="github" />
+        </a>
       </li>
 
       <li class="item">
         <img class="media" src="./assets/icons/email.png" alt="email logo" />
 
-        <div class="social-description" >
-          <span>E-mail</span>
-          <a href="www.email.com.br">
-            <img class="link" src="./assets/icons/arrow.png" alt="email" />
-          </a>
-        </div>
+        <span>E-mail</span>
+        <a href="www.email.com.br">
+          <img class="link" src="./assets/icons/arrow.png" alt="email" />
+        </a>
       </li>
     </ul>
   </section>
