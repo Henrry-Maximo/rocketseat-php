@@ -310,6 +310,10 @@ body {
   margin-left: 1rem;
 }
 
+.container-items .item a {
+  margin: 0;
+}
+
 .container-items .item span {
   font-family: 'Maven' serif;
   font-size: 16px;
