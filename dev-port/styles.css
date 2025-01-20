@@ -288,7 +288,7 @@ body {
   width: 25rem;
 
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   list-style: none;
 
   border-radius: 8px;
@@ -296,6 +296,8 @@ body {
 
   padding: 1.5rem;
   background-color: #292C34;
+
+  position: relative;
 }
 
 .container-items .item .media {
@@ -311,12 +313,15 @@ body {
 }
 
 .container-items .item a {
-  margin: 0;
+  right: 10%;
+  position: absolute;
 }
 
 .container-items .item span {
   font-family: 'Maven' serif;
   font-size: 16px;
+
+  margin: auto 0;
 
   line-height: 140%;
   font-weight: 500;

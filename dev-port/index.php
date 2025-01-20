@@ -126,7 +126,6 @@ $listOfProjectsInMemory = [
       <p>Veja os projetos em destaque</p>
     </header>
 
-
     <ul class="grid">
       <?php foreach ($listOfProjectsInMemory as $project): ?>
         <li class="card">
@@ -149,54 +148,55 @@ $listOfProjectsInMemory = [
 
       <?php endforeach; ?>
     </ul>
-
   </section>
 
-  <section class="page">
-    <div class="informations">
-      <span>Contato</span>
-      <p class="question">Gostou do meu trabalho?</p>
-      <p>Entre em contato ou acompanhe as minhas redes sociais!</p>
-    </div>
+  <div id="background">
+    <section class="page">
+      <div class="informations">
+        <span>Contato</span>
+        <p class="question">Gostou do meu trabalho?</p>
+        <p>Entre em contato ou acompanhe as minhas redes sociais!</p>
+      </div>
 
-    <ul class="container-items">
-      <li class="item">
-        <img class="media" src="./assets/icons/linkedin.png" alt="linkedin logo" />
+      <ul class="container-items">
+        <li class="item">
+          <img class="media" src="./assets/icons/linkedin.png" alt="linkedin logo" />
 
-        <span>Linkedin</span>
-        <a href="www.linkedin.com.br">
-          <img class="link" src="./assets/icons/arrow.png" alt="linkedin" />
-        </a>
-      </li>
+          <span>Linkedin</span>
+          <a href="www.linkedin.com.br">
+            <img class="link" src="./assets/icons/arrow.png" alt="linkedin" />
+          </a>
+        </li>
 
-      <li class="item">
-        <img class="media" src="./assets/icons/instagram.png" alt="instagram logo" />
+        <li class="item">
+          <img class="media" src="./assets/icons/instagram.png" alt="instagram logo" />
 
-        <span>Instagram</span>
-        <a href="www.instagram.com.br">
-          <img class="link" src="./assets/icons/arrow.png" alt="instagram" />
-        </a>
-      </li>
+          <span>Instagram</span>
+          <a href="www.instagram.com.br">
+            <img class="link" src="./assets/icons/arrow.png" alt="instagram" />
+          </a>
+        </li>
 
-      <li class="item">
-        <img class="media" src="./assets/icons/github.png" alt="github logo" />
+        <li class="item">
+          <img class="media" src="./assets/icons/github.png" alt="github logo" />
 
-        <span>Github</span>
-        <a href="www.github.com.br">
-          <img class="link" src="./assets/icons/arrow.png" alt="github" />
-        </a>
-      </li>
+          <span>Github</span>
+          <a href="www.github.com.br">
+            <img class="link" src="./assets/icons/arrow.png" alt="github" />
+          </a>
+        </li>
 
-      <li class="item">
-        <img class="media" src="./assets/icons/email.png" alt="email logo" />
+        <li class="item">
+          <img class="media" src="./assets/icons/email.png" alt="email logo" />
 
-        <span>E-mail</span>
-        <a href="www.email.com.br">
-          <img class="link" src="./assets/icons/arrow.png" alt="email" />
-        </a>
-      </li>
-    </ul>
-  </section>
+          <span>E-mail</span>
+          <a href="www.email.com.br">
+            <img class="link" src="./assets/icons/arrow.png" alt="email" />
+          </a>
+        </li>
+      </ul>
+    </section>
+  </div>
 </body>
 
 </html>
