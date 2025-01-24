@@ -69,6 +69,29 @@ $listOfProjectsInMemory = [
   ],
 ]
 
+$dataSocialMediaOnMemory = [
+  [
+    "src" => "./assets/icons/linkedin.png",
+	  "name" => "Linkedin",
+	  "social" => "www.linkedin.com.br"
+  ],
+  [
+    "src" => "./assets/icons/instagram.png",
+	  "name" => "Instagram",
+	  "social" => "www.instagram.com.br"
+  ],
+  [
+    "src" => "./assets/icons/github.png",
+	  "name" => "Github",
+	  "social" => "www.github.com.br"
+  ],
+  [
+    "src" => "./assets/icons/email.png",
+	  "name" => "E-mail",
+	  "social" => "www.email.com.br"
+  ],
+]
+
 ?>
 
 <!DOCTYPE html>
