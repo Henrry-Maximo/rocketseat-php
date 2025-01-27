@@ -104,6 +104,13 @@ $dataSocialMediaOnMemory = [
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  /> -->
+
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
   <link
     href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
@@ -120,7 +127,7 @@ $dataSocialMediaOnMemory = [
 <body>
   <div id="background">
     <main class="page" id="space-elements">
-      <header class="header">
+      <header class="header animate-pulse">
         <img class="profile-logo" src="https://github.com/henrry-maximo.png" alt="developer-profile-img" />
 
         <section class="summary">
@@ -137,7 +144,7 @@ $dataSocialMediaOnMemory = [
 
       <footer>
         <nav>
-          <ul class="description-skills">
+          <ul class="description-skills animate-bounce">
             <li class="skills" id="color-green"><a href="https://github.com/Henrry-Maximo" target="_blank">GitHub</a>
             </li>
             <li class="skills" id="color-purple">PHP</li>
@@ -151,7 +158,7 @@ $dataSocialMediaOnMemory = [
   </div>
 
 
-  <section class="page" id="my-jobs">
+  <section class="page animate-pulse" id="my-jobs">
     <header class="header-jobs">
       <span>Meu Trabalho</span>
       <p>Veja os projetos em destaque</p>
@@ -183,16 +190,17 @@ $dataSocialMediaOnMemory = [
 
   <div id="background">
     <section class="page">
-      <div class="informations">
+      <div class="informations text-center">
         <span>Contato</span>
+        
         <p class="question">Gostou do meu trabalho?</p>
         <p>Entre em contato ou acompanhe as minhas redes sociais!</p>
       </div>
 
-      <ul class="container-items">
+      <ul class="container-items mt-4">
         <?php foreach ($dataSocialMediaOnMemory as $social): ?>
-          
-          <li class="item">
+
+          <li class="item animate-bounce">
             <img class="media" src=<?= $social['src'] ?> alt="linkedin logo" />
 
             <span><?= $social['name'] ?></span>
