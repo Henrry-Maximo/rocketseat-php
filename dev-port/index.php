@@ -67,30 +67,30 @@ $listOfProjectsInMemory = [
       "JAVASCRIPT"
     ],
   ],
-]
+];
 
 $dataSocialMediaOnMemory = [
   [
     "src" => "./assets/icons/linkedin.png",
-	  "name" => "Linkedin",
-	  "social" => "www.linkedin.com.br"
+    "name" => "Linkedin",
+    "social" => "www.linkedin.com.br"
   ],
   [
     "src" => "./assets/icons/instagram.png",
-	  "name" => "Instagram",
-	  "social" => "www.instagram.com.br"
+    "name" => "Instagram",
+    "social" => "www.instagram.com.br"
   ],
   [
     "src" => "./assets/icons/github.png",
-	  "name" => "Github",
-	  "social" => "www.github.com.br"
+    "name" => "Github",
+    "social" => "www.github.com.br"
   ],
   [
     "src" => "./assets/icons/email.png",
-	  "name" => "E-mail",
-	  "social" => "www.email.com.br"
-  ],
-]
+    "name" => "E-mail",
+    "social" => "www.email.com.br"
+  ]
+];
 
 ?>
 
@@ -104,9 +104,15 @@ $dataSocialMediaOnMemory = [
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Maven+Pro:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Maven+Pro:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -123,7 +129,8 @@ $dataSocialMediaOnMemory = [
             <h1 class="my-job">Desenvolvedor NodeJS</h1>
           </div>
 
-          <p class="my-desc">Transformo necessidades em aplicações reais, evolventes e funcionais. Desenvolvo sistemas através da minha
+          <p class="my-desc">Transformo necessidades em aplicações reais, evolventes e funcionais. Desenvolvo sistemas
+            através da minha
             paixão pela tecnologia, contribuindo com soluções inovadoras e eficazes para desafios complexos.</p>
         </section>
       </header>
@@ -131,7 +138,8 @@ $dataSocialMediaOnMemory = [
       <footer>
         <nav>
           <ul class="description-skills">
-            <li class="skills" id="color-green"><a href="https://github.com/Henrry-Maximo" target="_blank">GitHub</a></li>
+            <li class="skills" id="color-green"><a href="https://github.com/Henrry-Maximo" target="_blank">GitHub</a>
+            </li>
             <li class="skills" id="color-purple">PHP</li>
             <li class="skills" id="color-blue">CSS</li>
             <li class="skills" id="color-red">HTML</li>
@@ -182,41 +190,18 @@ $dataSocialMediaOnMemory = [
       </div>
 
       <ul class="container-items">
-        <li class="item">
-          <img class="media" src="./assets/icons/linkedin.png" alt="linkedin logo" />
+        <?php foreach ($dataSocialMediaOnMemory as $social): ?>
+          
+          <li class="item">
+            <img class="media" src=<?= $social['src'] ?> alt="linkedin logo" />
 
-          <span>Linkedin</span>
-          <a href="www.linkedin.com.br">
-            <img class="link" src="./assets/icons/arrow.png" alt="linkedin" />
-          </a>
-        </li>
+            <span><?= $social['name'] ?></span>
+            <a href=<?= $social['social'] ?>>
+              <img class="link" src="./assets/icons/arrow.png" alt="linkedin" />
+            </a>
+          </li>
 
-        <li class="item">
-          <img class="media" src="./assets/icons/instagram.png" alt="instagram logo" />
-
-          <span>Instagram</span>
-          <a href="www.instagram.com.br">
-            <img class="link" src="./assets/icons/arrow.png" alt="instagram" />
-          </a>
-        </li>
-
-        <li class="item">
-          <img class="media" src="./assets/icons/github.png" alt="github logo" />
-
-          <span>Github</span>
-          <a href="www.github.com.br">
-            <img class="link" src="./assets/icons/arrow.png" alt="github" />
-          </a>
-        </li>
-
-        <li class="item">
-          <img class="media" src="./assets/icons/email.png" alt="email logo" />
-
-          <span>E-mail</span>
-          <a href="www.email.com.br">
-            <img class="link" src="./assets/icons/arrow.png" alt="email" />
-          </a>
-        </li>
+        <?php endforeach; ?>
       </ul>
     </section>
   </div>
