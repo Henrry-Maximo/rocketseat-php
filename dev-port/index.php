@@ -158,7 +158,7 @@ $dataSocialMediaOnMemory = [
   </div>
 
 
-  <section class="page animate-pulse" id="my-jobs">
+  <section class="page animate-pulse" id="my-jobs bg-violet-600">
     <header class="header-jobs">
       <span>Meu Trabalho</span>
       <p>Veja os projetos em destaque</p>
@@ -200,11 +200,11 @@ $dataSocialMediaOnMemory = [
       <ul class="container-items mt-4">
         <?php foreach ($dataSocialMediaOnMemory as $social): ?>
 
-          <li class="item animate-bounce">
-            <img class="media" src=<?= $social['src'] ?> alt="linkedin logo" />
+          <li class="item animate-bounce hover:bg-sky-700">
+            <img class="media animate-bounce" src=<?= $social['src'] ?> alt="linkedin logo" />
 
-            <span><?= $social['name'] ?></span>
-            <a href=<?= $social['social'] ?>>
+            <span class="animate-bounce"><?= $social['name'] ?></span>
+            <a class="animate-bounce" <?= $social['social'] ?>>
               <img class="link" src="./assets/icons/arrow.png" alt="linkedin" />
             </a>
           </li>

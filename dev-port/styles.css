@@ -38,7 +38,7 @@ body {
   align-items: center;
   justify-content: center; /* verticalmente */
 
-  gap: 1rem;
+  gap: 4rem;
 }
 
 #space-elements {
