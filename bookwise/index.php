@@ -1,5 +1,15 @@
 <?php
 
+$booksDatabaseOnMemory = [
+  [
+    "image" => "https://m.media-amazon.com/images/I/71Vkg7GfPFL._AC_UF1000,1000_QL80_.jpg",
+    "title" => "Entendendo Algoritmos",
+    "score" => 4,
+    "description" => "Si osculantur puer tuss aut uxorem tuam, osculum, non dico"
+  ]
+]
+
+
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +31,7 @@
     </style> -->
 </head>
 
-<body class="antialiased">
+<body class="antialiased h-full">
   <header class="flex flex-row justify-between p-12 items-center bg-gray-100">
     <div class="grid grid-cols-2 gap-12 text-center items-center">
       <h1 class="text-3xl">Book Wise</h1>
@@ -40,39 +50,13 @@
 
   </header>
 
-  <main class="flex flex-col py-12 px-16 gap-12">
+  <main class="flex flex-col py-12 px-16 gap-12 flex-grow">
     <input class="p-4 border rounded-md" placeholder="Pesquisar..." />
 
     <section class="grid grid-cols-3 gap-8">
-      <div class="flex flex-col border rounded-sm py-4 px-2">
-        <div class="grid grid-cols-2">
-          <img src="https://cdn-icons-png.flaticon.com/512/456/456283.png" class="h-12" />
-
-          <div>
-            <h2>Entendendo algoritmos</h2>
-            <span class="ph-thin ph-star"></span>
-          </div>
-        </div>
-
-        <p class="mt-4">Si osculantur puer tuus aut</p>
-      </div>
-
-      <div class="flex flex-col border rounded-sm py-4 px-2">
-        <div class="grid grid-cols-2">
-          <img src="https://cdn-icons-png.flaticon.com/512/456/456283.png" class="h-12" />
-
-          <div>
-            <h2>Entendendo algoritmos</h2>
-            <span class="ph-thin ph-star"></span>
-          </div>
-        </div>
-
-        <p class="mt-4">Si osculantur puer tuus aut</p>
-      </div>
-
-      <div class="flex flex-col border rounded-sm py-4 px-2">
-        <div class="grid grid-cols-2">
-          <img src="https://cdn-icons-png.flaticon.com/512/456/456283.png" class="h-12" />
+      <div class="flex flex-col border rounded-sm py-4 px-2 mx-auto">
+        <div class="grid grid-cols-2 items-center justify-items-center">
+          <img src="" class="h-16" />
 
           <div>
             <h2>Entendendo algoritmos</h2>
