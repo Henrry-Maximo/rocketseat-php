@@ -1,3 +1,7 @@
+<?php
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -8,18 +12,78 @@
   <title>Book Wise</title>
 
   <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
 
-  <style type="text/tailwindcss">
+  <!-- <style type="text/tailwindcss">
     @theme {
       --color-clifford: #da373d;
     }
-    </style>
+    </style> -->
 </head>
 
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+<body class="antialiased">
+  <header class="flex flex-row justify-between p-12 items-center bg-gray-100">
+    <div class="grid grid-cols-2 gap-12 text-center items-center">
+      <h1 class="text-3xl">Book Wise</h1>
+
+      <nav>
+        <ul class="flex gap-4">
+          <li>Explorer</li>
+          <li>Meus Livros</li>
+        </ul>
+      </nav>
+    </div>
+
+    <a href="#" class="">
+      Fazer Login
+    </a>
+
+  </header>
+
+  <main class="flex flex-col py-12 px-16 gap-12">
+    <input class="p-4 border rounded-md" placeholder="Pesquisar..." />
+
+    <section class="grid grid-cols-3 gap-8">
+      <div class="flex flex-col border rounded-sm py-4 px-2">
+        <div class="grid grid-cols-2">
+          <img src="https://cdn-icons-png.flaticon.com/512/456/456283.png" class="h-12" />
+
+          <div>
+            <h2>Entendendo algoritmos</h2>
+            <span class="ph-thin ph-star"></span>
+          </div>
+        </div>
+
+        <p class="mt-4">Si osculantur puer tuus aut</p>
+      </div>
+
+      <div class="flex flex-col border rounded-sm py-4 px-2">
+        <div class="grid grid-cols-2">
+          <img src="https://cdn-icons-png.flaticon.com/512/456/456283.png" class="h-12" />
+
+          <div>
+            <h2>Entendendo algoritmos</h2>
+            <span class="ph-thin ph-star"></span>
+          </div>
+        </div>
+
+        <p class="mt-4">Si osculantur puer tuus aut</p>
+      </div>
+
+      <div class="flex flex-col border rounded-sm py-4 px-2">
+        <div class="grid grid-cols-2">
+          <img src="https://cdn-icons-png.flaticon.com/512/456/456283.png" class="h-12" />
+
+          <div>
+            <h2>Entendendo algoritmos</h2>
+            <span class="ph-thin ph-star"></span>
+          </div>
+        </div>
+
+        <p class="mt-4">Si osculantur puer tuus aut</p>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>
