@@ -32,40 +32,66 @@ $booksDatabaseOnMemory = [
 </head>
 
 <body class="antialiased h-full">
-  <header class="flex flex-row justify-between p-12 items-center bg-gray-100">
+  <header class="flex flex-row justify-between p-12 items-center bg-violet-50 border-b-2 border-indigo-500">
     <div class="grid grid-cols-2 gap-12 text-center items-center">
-      <h1 class="text-3xl">Book Wise</h1>
+      <h1 class="text-3xl font-bold text-gray-700">Book Wise</h1>
 
       <nav>
         <ul class="flex gap-4">
-          <li>Explorer</li>
-          <li>Meus Livros</li>
+          <li><a href="explorer" class="hover:text-violet-700">Explorer</a></li>
+          <li><a href="./pages/mybooks" class="hover:text-violet-700">Meus Livros</a></li>
         </ul>
       </nav>
     </div>
 
-    <a href="#" class="">
+    <a href="#" class="hover:text-violet-700 underline">
       Fazer Login
     </a>
-
   </header>
 
   <main class="flex flex-col py-12 px-16 gap-12 flex-grow">
     <input class="p-4 border rounded-md" placeholder="Pesquisar..." />
 
-    <section class="grid grid-cols-3 gap-8">
-      <div class="flex flex-col border rounded-sm py-4 px-2 mx-auto">
+    <section class="grid grid-cols-3 gap-8 mx-28">
+      <div class="flex flex-col border rounded-sm py-4 px-2 mx-auto text-center">
         <div class="grid grid-cols-2 items-center justify-items-center">
-          <img src="" class="h-16" />
+          <img src="https://www.pimentacultural.com/wp-content/uploads/2024/04/Pimenta_Cultural_explorando-inteligencia.jpg" class="h-16" />
 
           <div>
-            <h2>Entendendo algoritmos</h2>
+            <h2>Explorando a Inteligência Artificial</h2>
             <span class="ph-thin ph-star"></span>
           </div>
         </div>
 
-        <p class="mt-4">Si osculantur puer tuus aut</p>
+        <p class="mt-4">In nova fert animus mutatas dicere formas.</p>
       </div>
+
+      <div class="flex flex-col border rounded-sm py-4 px-2 mx-auto text-center">
+        <div class="grid grid-cols-2 items-center justify-items-center">
+          <img src="https://www.editoradodireito.com.br/media/catalog/product/9/7/9788536533742.80_1.png?optimize=low&bg-color=255,255,255&fit=bounds&height=1000&width=700&canvas=700:1000" class="h-16" />
+
+          <div>
+            <h2>O Segredo dos Bancos de Dados</h2>
+            <span class="ph-thin ph-star"></span>
+          </div>
+        </div>
+
+        <p class="mt-4">Quisque volutpat condimentum velit.</p>
+      </div>
+
+      <div class="flex flex-col border rounded-sm py-4 px-2 mx-auto text-center">
+        <div class="grid grid-cols-2 items-center justify-items-center">
+          <img src="https://m.media-amazon.com/images/I/515ANhAjaVL._AC_UF1000,1000_QL80_.jpg" class="h-16" />
+
+          <div>
+            <h2>Matemática para Programadores</h2>
+            <span class="ph-thin ph-star"></span>
+          </div>
+        </div>
+
+        <p class="mt-4">Sed ut perspiciatis unde omnis iste natus error.</p>
+      </div>
+
     </section>
   </main>
 </body>
