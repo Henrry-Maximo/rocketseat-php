@@ -49,7 +49,7 @@ $booksDatabaseOnMemory = [
     </a>
   </header>
 
-  <main class="flex flex-col py-12 px-16 gap-12 flex-grow">
+  <main class="flex flex-col py-12 px-16 gap-12">
     <input class="p-4 border rounded-md" placeholder="Pesquisar..." />
 
     <section class="grid grid-cols-3 gap-8 mx-28">
