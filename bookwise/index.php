@@ -34,23 +34,35 @@ $booksDatabaseOnMemory = [
 <body class="antialiased h-full">
   <header class="flex flex-row justify-between p-12 items-center bg-violet-50 border-b-2 border-indigo-500">
     <div class="grid grid-cols-2 gap-12 text-center items-center">
-      <h1 class="text-3xl font-bold text-gray-700">Book Wise</h1>
+      <h1 class="text-3xl font-bold text-gray-700 tracking-wide">Book Wise</h1>
 
       <nav>
-        <ul class="flex gap-4">
+        <ul class="flex gap-4 font-semibold">
           <li><a href="explorer" class="hover:text-violet-700">Explorer</a></li>
           <li><a href="./pages/mybooks" class="hover:text-violet-700">Meus Livros</a></li>
         </ul>
       </nav>
     </div>
 
-    <a href="#" class="hover:text-violet-700 underline">
-      Fazer Login
-    </a>
+    <ul>
+      <li>
+        <a href="#" class="hover:text-violet-700 underline">
+          Fazer Login
+        </a>
+      </li>
+    </ul>
   </header>
 
   <main class="flex flex-col py-12 px-16 gap-12">
-    <input class="p-4 border rounded-md" placeholder="Pesquisar..." />
+    <form class="flex gap-4">
+      <input 
+        type="text" 
+        class="border-stone-200 border-2 bg-stone-100 hover:border-purple-200 text-sm rounded-md flex-grow focus:outline-none px-2 py-2" 
+        placeholder="Digite aqui..." 
+        name="pesquisar"
+      />
+      <button class="bg-purple-200 hover:bg-purple-600 w-12 rounded-md"><i class="ph ph-magnifying-glass"></i></button>
+    </form>
 
     <section class="grid grid-cols-3 gap-8 mx-28">
       <div class="flex flex-col border rounded-sm py-4 px-2 mx-auto text-center">
