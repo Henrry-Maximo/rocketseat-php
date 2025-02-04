@@ -33,7 +33,7 @@ $booksDatabaseOnMemory = [
 
 <body class="antialiased h-full bg-gray-100">
   <header class="flex flex-row justify-between p-12 items-center bg-white border-b-2 border-gray-200">
-    <div class="grid grid-cols-2 gap-12 text-center items-center">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 text-center items-center">
       <h1 class="text-3xl font-bold text-gray-700 tracking-wide">Book Wise</h1>
 
       <nav>
@@ -65,7 +65,7 @@ $booksDatabaseOnMemory = [
       <button type="submit" class="bg-purple-200 hover:bg-purple-600 w-12 rounded-md"><i class="ph ph-magnifying-glass"></i></button>
     </form>
 
-    <section class="grid grid-cols-3 gap-8">
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       <div class="flex flex-col border border-gray-200 rounded-sm py-4 px-2 mx-auto text-center bg-gray-50">
         <div class="grid grid-cols-2 items-center justify-items-center">
           <img
