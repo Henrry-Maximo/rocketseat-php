@@ -78,12 +78,16 @@ $booksDatabaseOnMemory = [
             <div>
               <span class="text-xs italic">Autor</span>
 
-              <div>
-                <span class="ph-thin ph-star" />
-                <span class="ph-thin ph-star" />
-                <span class="ph-thin ph-star" />
-                <span class="ph-thin ph-star" />
-                <span class="ph-thin ph-star" />
+              <div class="flex flex-col gap-2">
+                <div>
+                  <span class="ph-thin ph-star" />
+                  <span class="ph-thin ph-star" />
+                  <span class="ph-thin ph-star" />
+                  <span class="ph-thin ph-star" />
+                  <span class="ph-thin ph-star" />
+                </div>
+
+                <span class="text-xs">(3 Avaliações)</span>
               </div>
             </div>
           </div>
