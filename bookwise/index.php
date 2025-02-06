@@ -2,38 +2,38 @@
 
 $booksDatabaseOnMemory = [
   [
-    "image"       => "https://picsum.photos/200/300?random=1",
-    "title"       => "Data Structures Unveiled",
-    "author"      => "Andrew Tanenbaum",
-    "score"       => 4.5,
+    "image" => "https://picsum.photos/200/300?random=1",
+    "title" => "Data Structures Unveiled",
+    "author" => "Andrew Tanenbaum",
+    "score" => 4.5,
     "description" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
   ],
   [
-    "image"       => "https://picsum.photos/200/300?random=2",
-    "title"       => "The Art of Programming",
-    "author"      => "Donald Knuth",
-    "score"       => 4.8,
+    "image" => "https://picsum.photos/200/300?random=2",
+    "title" => "The Art of Programming",
+    "author" => "Donald Knuth",
+    "score" => 4.8,
     "description" => "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   ],
   [
-    "image"       => "https://picsum.photos/200/300?random=3",
-    "title"       => "Machine Learning Basics",
-    "author"      => "Andrew Ng",
-    "score"       => 3.9,
+    "image" => "https://picsum.photos/200/300?random=3",
+    "title" => "Machine Learning Basics",
+    "author" => "Andrew Ng",
+    "score" => 3.9,
     "description" => "Ut enim ad minim veniam, quis nostrud exercitation ullamco."
   ],
   [
-    "image"       => "https://picsum.photos/200/300?random=4",
-    "title"       => "Clean Code Handbook",
-    "author"      => "Robert C. Martin",
-    "score"       => 4.7,
+    "image" => "https://picsum.photos/200/300?random=4",
+    "title" => "Clean Code Handbook",
+    "author" => "Robert C. Martin",
+    "score" => 4.7,
     "description" => "Duis aute irure dolor in reprehenderit in voluptate velit."
   ],
   [
-    "image"       => "https://picsum.photos/200/300?random=5",
-    "title"       => "Cybersecurity Fundamentals",
-    "author"      => "Bruce Schneier",
-    "score"       => 4.2,
+    "image" => "https://picsum.photos/200/300?random=5",
+    "title" => "Cybersecurity Fundamentals",
+    "author" => "Bruce Schneier",
+    "score" => 4.2,
     "description" => "Excepteur sint occaecat cupidatat non proident, sunt in culpa."
   ]
 ];
@@ -73,10 +73,25 @@ $booksDatabaseOnMemory = [
     </div>
 
     <nav>
-      <ul>
+      <ul class="flex gap-2">
         <li>
-          <a href="#" class="tracking-wide hover:text-violet-800 hover:bg-gray-100 rounded-full border-2 border-gray-200 px-3 py-2">
+          <a href="#" class="flex items-center gap-1 tracking-wide hover:text-violet-800 hover:bg-gray-100 rounded-full border-2 border-gray-200 px-3 py-2 hover:animate-bounce">
+            <i class="ph-fill ph-info"></i>
+            <span class="text-xs italic">ajuda</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="flex items-center gap-1 tracking-wide hover:text-violet-800 hover:bg-gray-100 rounded-full border-2 border-gray-200 px-3 py-2 hover:animate-bounce">
+            <i class="ph-fill ph-user-circle"></i>
+            <span class="text-xs italic">perfil</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="flex items-center gap-1 tracking-wide hover:text-violet-800 hover:bg-gray-100 rounded-full border-2 border-gray-200 px-3 py-2 hover:animate-bounce">
             <i class="ph-fill ph-sign-out"></i>
+            <span class="text-xs italic">sair</span>
           </a>
         </li>
       </ul>
@@ -100,8 +115,7 @@ $booksDatabaseOnMemory = [
             <img
               src="<?= $book['image'] ?>"
               class="w-1/2 rounded-sm border border-purple-300"
-              alt="cover book"
-            />
+              alt="cover book" />
             <div>
               <h2 class="font-semibold"><?= $book['title'] ?></h2>
 
