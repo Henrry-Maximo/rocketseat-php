@@ -66,8 +66,8 @@ $booksDatabaseOnMemory = [
 
       <nav>
         <ul class="flex gap-4 font-semibold">
-          <li><a href="explorer" class="hover:text-violet-700">Explorer</a></li>
-          <li><a href="./pages/mybooks" class="hover:text-violet-700">Meus Livros</a></li>
+          <li><a href="explorer" class="hover:text-violet-700 hover:border-b-3 border-violet-700">Explorer</a></li>
+          <li><a href="./pages/mybooks" class="hover:text-violet-700 hover:border-b-3 border-violet-700">Meus Livros</a></li>
         </ul>
       </nav>
     </div>
@@ -95,7 +95,7 @@ $booksDatabaseOnMemory = [
 
     <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       <?php foreach ($booksDatabaseOnMemory as $book): ?>
-        <div class="flex flex-col border border-gray-200 rounded-sm py-4 px-2 mx-auto text-center bg-gray-50">
+        <div class="flex flex-col border border-gray-200 rounded-sm py-4 px-2 mx-auto text-center bg-gray-50 hover:bg-purple-50 hover:border-purple-300 hover:shadow-sm">
           <div class="grid grid-cols-2 items-center justify-items-center">
             <img
               src="<?= $book['image'] ?>"
