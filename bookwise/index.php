@@ -117,7 +117,7 @@ $booksDatabaseOnMemory = [
               class="w-1/2 rounded-sm border border-purple-300"
               alt="cover book" />
             <div>
-              <h2 class="font-semibold"><?= $book['title'] ?></h2>
+              <a href="./mybooks.php" class="font-semibold hover:text-violet-600 hover:underline"><?= $book['title'] ?></a>
 
               <div>
                 <span class="text-xs italic"><?= $book['author'] ?></span>
