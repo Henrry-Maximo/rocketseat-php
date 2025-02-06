@@ -2,25 +2,41 @@
 
 $booksDatabaseOnMemory = [
   [
-    "image" => "https://www.pimentacultural.com/wp-content/uploads/2024/04/Pimenta_Cultural_explorando-inteligencia.jpg",
-    "title" => "Entendendo Algoritmos",
-    "score" => 4,
-    "description" => "Si osculantur puer tuss aut uxorem tuam, osculum, non dico"
+    "image"       => "https://picsum.photos/200/300?random=1",
+    "title"       => "Data Structures Unveiled",
+    "author"      => "Andrew Tanenbaum",
+    "score"       => 4.5,
+    "description" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
   ],
   [
-    "image" => "https://www.pimentacultural.com/wp-content/uploads/2024/04/Pimenta_Cultural_explorando-inteligencia.jpg",
-    "title" => "Entendendo Algoritmos",
-    "score" => 4,
-    "description" => "Si osculantur puer tuss aut uxorem tuam, osculum, non dico"
+    "image"       => "https://picsum.photos/200/300?random=2",
+    "title"       => "The Art of Programming",
+    "author"      => "Donald Knuth",
+    "score"       => 4.8,
+    "description" => "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   ],
   [
-    "image" => "https://www.pimentacultural.com/wp-content/uploads/2024/04/Pimenta_Cultural_explorando-inteligencia.jpg",
-    "title" => "Entendendo Algoritmos",
-    "score" => 4,
-    "description" => "Si osculantur puer tuss aut uxorem tuam, osculum, non dico"
+    "image"       => "https://picsum.photos/200/300?random=3",
+    "title"       => "Machine Learning Basics",
+    "author"      => "Andrew Ng",
+    "score"       => 3.9,
+    "description" => "Ut enim ad minim veniam, quis nostrud exercitation ullamco."
   ],
-]
-
+  [
+    "image"       => "https://picsum.photos/200/300?random=4",
+    "title"       => "Clean Code Handbook",
+    "author"      => "Robert C. Martin",
+    "score"       => 4.7,
+    "description" => "Duis aute irure dolor in reprehenderit in voluptate velit."
+  ],
+  [
+    "image"       => "https://picsum.photos/200/300?random=5",
+    "title"       => "Cybersecurity Fundamentals",
+    "author"      => "Bruce Schneier",
+    "score"       => 4.2,
+    "description" => "Excepteur sint occaecat cupidatat non proident, sunt in culpa."
+  ]
+];
 
 ?>
 
@@ -83,31 +99,31 @@ $booksDatabaseOnMemory = [
           <div class="grid grid-cols-2 items-center justify-items-center">
             <img
               src="<?= $book['image'] ?>"
-              class="w-1/2 rounded-sm"
+              class="w-1/2 rounded-sm border border-purple-300"
               alt="cover book"
             />
             <div>
-              <h2 class="font-semibold">Explorando a Inteligência Artificial</h2>
+              <h2 class="font-semibold"><?= $book['title'] ?></h2>
 
               <div>
-                <span class="text-xs italic">Autor</span>
+                <span class="text-xs italic"><?= $book['author'] ?></span>
 
                 <div class="flex flex-col gap-2">
                   <div>
-                    <span class="ph-thin ph-star" />
+                    <span class="ph-thin ph-star ph-fill" />
                     <span class="ph-thin ph-star" />
                     <span class="ph-thin ph-star" />
                     <span class="ph-thin ph-star" />
                     <span class="ph-thin ph-star" />
                   </div>
 
-                  <span class="text-xs">(3 Avaliações)</span>
+                  <span class="text-xs">(<?= $book['score'] ?> Avaliações)</span>
                 </div>
               </div>
             </div>
           </div>
 
-          <p class="mt-4 text-sm">In nova fert animus mutatas dicere formas.</p>
+          <p class="mt-4 text-sm"><?= $book['description'] ?></p>
         </div>
       <?php endforeach; ?>
     </section>
