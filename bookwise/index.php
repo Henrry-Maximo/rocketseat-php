@@ -2,11 +2,23 @@
 
 $booksDatabaseOnMemory = [
   [
-    "image" => "https://m.media-amazon.com/images/I/71Vkg7GfPFL._AC_UF1000,1000_QL80_.jpg",
+    "image" => "https://www.pimentacultural.com/wp-content/uploads/2024/04/Pimenta_Cultural_explorando-inteligencia.jpg",
     "title" => "Entendendo Algoritmos",
     "score" => 4,
     "description" => "Si osculantur puer tuss aut uxorem tuam, osculum, non dico"
-  ]
+  ],
+  [
+    "image" => "https://www.pimentacultural.com/wp-content/uploads/2024/04/Pimenta_Cultural_explorando-inteligencia.jpg",
+    "title" => "Entendendo Algoritmos",
+    "score" => 4,
+    "description" => "Si osculantur puer tuss aut uxorem tuam, osculum, non dico"
+  ],
+  [
+    "image" => "https://www.pimentacultural.com/wp-content/uploads/2024/04/Pimenta_Cultural_explorando-inteligencia.jpg",
+    "title" => "Entendendo Algoritmos",
+    "score" => 4,
+    "description" => "Si osculantur puer tuss aut uxorem tuam, osculum, non dico"
+  ],
 ]
 
 
@@ -66,87 +78,38 @@ $booksDatabaseOnMemory = [
     </form>
 
     <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div class="flex flex-col border border-gray-200 rounded-sm py-4 px-2 mx-auto text-center bg-gray-50">
-        <div class="grid grid-cols-2 items-center justify-items-center">
-          <img
-            src="https://www.pimentacultural.com/wp-content/uploads/2024/04/Pimenta_Cultural_explorando-inteligencia.jpg"
-            class="w-1/2 rounded-sm" />
-
-          <div>
-            <h2 class="font-semibold">Explorando a Inteligência Artificial</h2>
-
+      <?php foreach ($booksDatabaseOnMemory as $book): ?>
+        <div class="flex flex-col border border-gray-200 rounded-sm py-4 px-2 mx-auto text-center bg-gray-50">
+          <div class="grid grid-cols-2 items-center justify-items-center">
+            <img
+              src="<?= $book['image'] ?>"
+              class="w-1/2 rounded-sm"
+              alt="cover book"
+            />
             <div>
-              <span class="text-xs italic">Autor</span>
+              <h2 class="font-semibold">Explorando a Inteligência Artificial</h2>
 
-              <div class="flex flex-col gap-2">
-                <div>
-                  <span class="ph-thin ph-star" />
-                  <span class="ph-thin ph-star" />
-                  <span class="ph-thin ph-star" />
-                  <span class="ph-thin ph-star" />
-                  <span class="ph-thin ph-star" />
+              <div>
+                <span class="text-xs italic">Autor</span>
+
+                <div class="flex flex-col gap-2">
+                  <div>
+                    <span class="ph-thin ph-star" />
+                    <span class="ph-thin ph-star" />
+                    <span class="ph-thin ph-star" />
+                    <span class="ph-thin ph-star" />
+                    <span class="ph-thin ph-star" />
+                  </div>
+
+                  <span class="text-xs">(3 Avaliações)</span>
                 </div>
-
-                <span class="text-xs">(3 Avaliações)</span>
               </div>
             </div>
           </div>
+
+          <p class="mt-4 text-sm">In nova fert animus mutatas dicere formas.</p>
         </div>
-
-        <p class="mt-4 text-sm">In nova fert animus mutatas dicere formas.</p>
-      </div>
-
-      <div class="flex flex-col border border-gray-200 rounded-sm py-4 px-2 mx-auto text-center bg-gray-50">
-        <div class="grid grid-cols-2 items-center justify-items-center">
-          <img
-            src="https://www.pimentacultural.com/wp-content/uploads/2024/04/Pimenta_Cultural_explorando-inteligencia.jpg"
-            class="w-1/2 rounded-sm" />
-
-          <div>
-            <h2 class="font-semibold">Explorando a Inteligência Artificial</h2>
-
-            <div>
-              <span class="text-xs italic">Autor</span>
-
-              <div>
-                <span class="ph-thin ph-star" />
-                <span class="ph-thin ph-star" />
-                <span class="ph-thin ph-star" />
-                <span class="ph-thin ph-star" />
-                <span class="ph-thin ph-star" />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <p class="mt-4 text-sm">In nova fert animus mutatas dicere formas.</p>
-      </div>
-
-      <div class="flex flex-col border border-gray-200 rounded-sm py-4 px-2 mx-auto text-center bg-gray-50">
-        <div class="grid grid-cols-2 items-center justify-items-center">
-          <img
-            src="https://www.pimentacultural.com/wp-content/uploads/2024/04/Pimenta_Cultural_explorando-inteligencia.jpg"
-            class="w-1/2 rounded-sm" />
-
-          <div>
-            <h2 class="font-semibold">Explorando a Inteligência Artificial</h2>
-
-            <div>
-              <span class="text-xs italic">Autor</span>
-
-              <div>
-                <span class="ph-thin ph-star" />
-                <span class="ph-thin ph-star" />
-                <span class="ph-thin ph-star" />
-                <span class="ph-thin ph-star" />
-                <span class="ph-thin ph-star" />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <p class="mt-4 text-sm">In nova fert animus mutatas dicere formas.</p>
-      </div>
+      <?php endforeach; ?>
     </section>
 
   </main>
