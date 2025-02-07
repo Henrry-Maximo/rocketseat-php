@@ -15,15 +15,15 @@
 
 </head>
 
-<body class="antialiased h-full bg-gray-100">
+<body class="antialiased h-screen bg-gray-100">
   <header class="flex flex-row justify-between p-12 items-center bg-white border-b-2 border-gray-200">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 text-center items-center">
       <h1 class="text-3xl font-bold text-gray-700 tracking-wide">Book Wise</h1>
 
       <nav>
         <ul class="flex gap-4 font-semibold">
-          <li><a href="explorer" class="hover:text-violet-700 hover:border-b-3 border-violet-700">Explorer</a></li>
-          <li><a href="./pages/mybooks" class="hover:text-violet-700 hover:border-b-3 border-violet-700">Meus Livros</a></li>
+          <li><a href="./index.php" class="hover:text-violet-700 hover:border-b-3 border-violet-700">Explorer</a></li>
+          <li><a href="./mybooks.php" class="hover:text-violet-700 hover:border-b-3 border-violet-700">Meus Livros</a></li>
         </ul>
       </nav>
     </div>
@@ -45,7 +45,7 @@
         </li>
 
         <li>
-          <a href="#" class="flex items-center gap-1 tracking-wide hover:text-violet-800 hover:bg-gray-100 rounded-full border-2 border-gray-200 px-3 py-2 hover:animate-bounce">
+          <a href="./login.php" class="flex items-center gap-1 tracking-wide hover:text-violet-800 hover:bg-gray-100 rounded-full border-2 border-gray-200 px-3 py-2 hover:animate-bounce">
             <i class="ph-fill ph-sign-out"></i>
             <span class="text-xs italic">sair</span>
           </a>
