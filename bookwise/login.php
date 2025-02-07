@@ -47,7 +47,7 @@
         </div>
       </div>
 
-      <form class="flex flex-col justify-center bg-white w-120 rounded-r-lg px-8 py-12 border-2 border-purple-100 shadow-sm">
+      <form class="flex flex-col justify-center bg-white w-120 rounded-r-lg px-8 py-12 border-2 border-purple-100 shadow-sm" method="post" action="/index.php">
         <h1 class="text-center text-xl font-bold py-8">Login</h1>
 
         <div class="flex flex-col gap-2">
@@ -62,7 +62,7 @@
           </div>
 
           <div class="flex flex-col gap-2 mt-8">
-            <button type="button" class="bg-white px-12 py-1 border border-purple-300 text-purple-300 hover:bg-purple-600 hover:border-white hover:text-white rounded-sm">
+            <button type="submit" class="bg-white px-12 py-1 border border-purple-300 text-purple-300 hover:bg-purple-600 hover:border-white hover:text-white rounded-sm">
               Entrar
             </button>
             <a href="./help" class="text-sm text-purple-400 hover:text-purple-800">
