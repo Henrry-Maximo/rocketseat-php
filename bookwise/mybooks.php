@@ -15,8 +15,8 @@
 
 </head>
 
-<body class="antialiased h-screen bg-gray-100">
-  <header class="flex flex-row justify-between p-12 items-center bg-white border-b-2 border-gray-200">
+<body class="antialiased flex flex-col h-screen bg-gray-100">
+  <header class="grid gird-cols-1 md:grid-cols-1 lg:grid-cols-2 p-12 items-center bg-white border-b-2 border-gray-200">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 text-center items-center">
       <h1 class="text-3xl font-bold text-gray-700 tracking-wide">Book Wise</h1>
 
@@ -28,8 +28,8 @@
       </nav>
     </div>
 
-    <nav>
-      <ul class="flex gap-2">
+    <nav class="ml-auto">
+      <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
         <li>
           <a href="#" class="flex items-center gap-1 tracking-wide hover:text-violet-800 hover:bg-gray-100 rounded-full border-2 border-gray-200 px-3 py-2 hover:animate-bounce">
             <i class="ph-fill ph-info"></i>
@@ -54,10 +54,7 @@
     </nav>
   </header>
 
-  <main class="flex flex-col py-12 px-16 gap-12">
-    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <span>teste</span>
-    </section>
+  <main class="flex flex-col py-12 px-16 gap-12 h-full">
 
   </main>
 </body>
