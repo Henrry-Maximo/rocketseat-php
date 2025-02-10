@@ -55,13 +55,13 @@
   </header>
 
   <main class="flex flex-col py-12 px-16 gap-12 h-full text-center">
-    <header class="grid grid-cols-2 justify-between bg-white rounded-sm px-2 py-8">
-      <h1 class="italic text-2xl text-bold">My books</h1>
+    <header class="grid grid-cols-2 justify-between bg-white rounded-sm px-2 py-8 shadow-sm">
+      <h1 class="italic text-2xl text-bold underline tracking-wide">My books</h1>
 
       <section>
         <input type="text" id="filter" class="border-2 border-violet-100 hover:border-violet-400 outline-none rounded-sm" />
 
-        <button type="button" class="bg-violet-200 hover:bg-violet-500 text-white rounded-md border-2 border-white px-2 py-2">
+        <button type="button" class="bg-violet-200 hover:bg-violet-500 text-white rounded-md border-2 border-white px-2 py-2 cursor-pointer">
           Adicionar
         </button>
       </section>
