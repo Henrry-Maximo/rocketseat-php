@@ -14,7 +14,7 @@
   <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
 </head>
 
-<body class="outline-0 flex flex-col antialiased h-screen bg-gray-100">
+<body class="focus:outline-none flex flex-col antialiased h-screen bg-gray-100">
   <header class="flex flex-row justify-between p-12 items-center bg-white border-b-2 border-gray-200">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 text-center items-center">
       <h1 class="text-3xl font-bold text-gray-700 tracking-wide">Book Wise</h1>

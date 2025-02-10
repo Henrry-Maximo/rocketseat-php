@@ -15,7 +15,7 @@
 
 </head>
 
-<body class="outline-0 antialiased flex flex-col h-screen bg-gray-100">
+<body class="focus:outline-none antialiased flex flex-col h-screen bg-gray-100">
   <header class="grid gird-cols-1 md:grid-cols-1 lg:grid-cols-2 p-12 items-center bg-white border-b-2 border-gray-200">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 text-center items-center">
       <h1 class="text-3xl font-bold text-gray-700 tracking-wide">Book Wise</h1>
