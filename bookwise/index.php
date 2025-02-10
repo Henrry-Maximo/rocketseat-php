@@ -59,7 +59,7 @@ $booksDatabaseOnMemory = [
     </style> -->
 </head>
 
-<body class="antialiased h-screen bg-gray-100">
+<body class="outline-0 antialiased h-screen bg-gray-100">
   <header class="flex flex-row justify-between p-12 items-center bg-white border-b-2 border-gray-200">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 text-center items-center">
       <h1 class="text-3xl font-bold text-gray-700 tracking-wide">Book Wise</h1>
@@ -102,10 +102,10 @@ $booksDatabaseOnMemory = [
     <form class="flex gap-4">
       <input
         type="text"
-        class="bg-white border-gray-200 border-2 hover:border-purple-200 text-sm rounded-md focus:outline-none flex-grow  px-2 py-2"
+        class="bg-white hover:border hover:border-purple-500 outline-0 text-sm rounded-md flex-grow px-2 py-2 shadow-sm"
         placeholder="Digite aqui..."
         name="pesquisar" />
-      <button type="submit" class="bg-purple-200 hover:bg-purple-600 w-12 rounded-md cursor-pointer"><i class="ph ph-magnifying-glass"></i></button>
+      <button type="submit" class="bg-purple-200 hover:bg-purple-600 w-12 rounded-md cursor-pointer outline-none hover:text-white"><i class="ph ph-magnifying-glass"></i></button>
     </form>
 
     <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

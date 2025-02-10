@@ -32,7 +32,7 @@
     </nav>
   </header>
 
-  <main class="flex flex-col flex-1 py-12 px-42 gap-12 justify-center">
+  <main class="outline-0 flex flex-col flex-1 py-12 px-42 gap-12 justify-center">
     <section class="flex flex-row px-8">
       <div class="flex flex-col bg-purple-400 flex-1 p-2 rounded-l-lg border-2 border-purple-100 shadow-sm justify-center">
         <div class="flex flex-col mb-4">
@@ -62,7 +62,7 @@
           </div>
 
           <div class="flex flex-col gap-2 mt-8">
-            <button type="submit" class="bg-white px-12 py-1 border border-purple-300 text-purple-300 hover:bg-purple-600 hover:border-white hover:text-white rounded-sm">
+            <button type="submit" class="bg-white px-12 py-1 border border-purple-300 text-purple-300 hover:bg-purple-600 hover:border-white hover:text-white rounded-sm cursor-pointer">
               Entrar
             </button>
             <a href="./help" class="text-sm text-purple-400 hover:text-purple-800">
