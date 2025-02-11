@@ -12,12 +12,15 @@ echo '<pre>';
 // var_dump($booksDatabaseOnMemory);
 echo '</pre>';
 
+// filtered by id
 $filtered = array_filter($booksDatabaseOnMemory, function($l) use($id) {
     return $l['id'] == $id;
 });
 
+// get first element array
 $firstBook = array_pop($filtered);
 
+// display all the informations about the array
 var_dump($firstBook);
 
 ?>
