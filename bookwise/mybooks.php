@@ -1,4 +1,25 @@
 <?php
+require 'data.php';
+
+// capturar id da url
+$id = $_REQUEST['id'];
+
+// expor valores
+// var_dump( $_REQUEST['id'] );
+// var_dump($booksDatabaseOnMemory);
+
+echo '<pre>';
+// var_dump($booksDatabaseOnMemory);
+echo '</pre>';
+
+$filtered = array_filter($booksDatabaseOnMemory, function($l) use($id) {
+    return $l['id'] == $id;
+});
+
+$firstBook = array_pop($filtered);
+
+var_dump($firstBook);
+
 ?>
 
 <!DOCTYPE html>
