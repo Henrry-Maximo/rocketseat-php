@@ -13,10 +13,13 @@ echo '<pre>';
 echo '</pre>';
 
 // filtered by id
-$filtered = array_filter($booksDatabaseOnMemory, function($l) use($id) {
-    return $l['id'] == $id;
-});
+// $filtered = array_filter($booksDatabaseOnMemory, function ($l) use ($id) {
+//   return $l['id'] == $id;
+// });
 
+$filtered = array_filter($booksDatabaseOnMemory, fn($l) => $l['id'] == $id);
+
+// superglobais
 // get first element array
 $firstBook = array_pop($filtered);
 
@@ -96,7 +99,7 @@ var_dump($firstBook);
         <img src="#" alt="">
 
         <div>
-          <h1>Entendendo Algoritmos</h1>
+          <h1><span></span> Algoritmos</h1>
           <p>Si osculantur puer tuus aut</p>
 
           <div>
