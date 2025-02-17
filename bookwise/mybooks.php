@@ -96,10 +96,11 @@ var_dump($firstBook);
 
     <section>
       <div>
-        <img src="#" alt="">
+        <?= $booksDatabaseOnMemory['title'] ?>
+        <img class="w-1/3" src="#" alt="">
 
         <div>
-          <h1><span></span> Algoritmos</h1>
+          <h1><span></span><?= $booksDatabaseOnMemory['title'] ?></h1>
           <p>Si osculantur puer tuus aut</p>
 
           <div>

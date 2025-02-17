@@ -62,7 +62,7 @@ require 'data.php';
   </header>
 
   <main class="flex flex-col py-12 px-16 gap-12">
-    <?php require "views/{$view}.php"; ?>
+    <?php require "views/{$view}.view.php"; ?>
 
   </main>
 </body>
