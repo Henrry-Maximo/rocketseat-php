@@ -2,7 +2,7 @@
 require 'data.php';
 
 // capturar id da url
-$id = $_REQUEST['id'];
+// $id = $_REQUEST['id'];
 
 // expor valores
 // var_dump( $_REQUEST['id'] );
@@ -17,14 +17,14 @@ echo '</pre>';
 //   return $l['id'] == $id;
 // });
 
-$filtered = array_filter($booksDatabaseOnMemory, fn($l) => $l['id'] == $id);
+// $filtered = array_filter($booksDatabaseOnMemory, fn($l) => $l['id'] == $id);
 
 // superglobais
 // get first element array
-$firstBook = array_pop($filtered);
+// $firstBook = array_pop($filtered);
 
 // display all the informations about the array
-var_dump($firstBook);
+// var_dump($firstBook);
 
 ?>
 
@@ -81,7 +81,7 @@ var_dump($firstBook);
     </nav>
   </header>
 
-  <main class="flex flex-col py-12 px-16 gap-12 h-full text-center">
+  <!-- <main class="flex flex-col py-12 px-16 gap-12 h-full text-center">
     <header class="grid grid-cols-2 justify-between bg-white rounded-sm px-2 py-8 shadow-sm">
       <h1 class="italic text-2xl text-bold underline tracking-wide">My books</h1>
 
@@ -127,7 +127,7 @@ var_dump($firstBook);
         </div>
       </aside>
     </section>
-  </main>
+  </main> -->
 </body>
 
 </html>
