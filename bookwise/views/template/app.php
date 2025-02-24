@@ -1,5 +1,5 @@
 <?php
-require 'data.php';
+// require 'data.php';
 
 ?>
 
@@ -29,8 +29,8 @@ require 'data.php';
 
       <nav>
         <ul class="flex gap-4 font-semibold">
-          <li><a href="./index.php" class="hover:text-violet-700 hover:border-b-3 border-violet-700">Explorer</a></li>
-          <li><a href="./mybooks.php" class="hover:text-violet-700 hover:border-b-3 border-violet-700">Meus Livros</a></li>
+          <li><a href="./index" class="hover:text-violet-700 hover:border-b-3 border-violet-700">Explorer</a></li>
+          <li><a href="./mybooks" class="hover:text-violet-700 hover:border-b-3 border-violet-700">Meus Livros</a></li>
         </ul>
       </nav>
     </div>
@@ -52,7 +52,7 @@ require 'data.php';
         </li>
 
         <li>
-          <a href="./login.php" class="flex items-center gap-1 tracking-wide hover:text-violet-800 hover:bg-gray-100 rounded-full border-2 border-gray-200 px-3 py-2 hover:animate-bounce">
+          <a href="./login" class="flex items-center gap-1 tracking-wide hover:text-violet-800 hover:bg-gray-100 rounded-full border-2 border-gray-200 px-3 py-2 hover:animate-bounce">
             <i class="ph-fill ph-sign-out"></i>
             <span class="text-xs italic">sair</span>
           </a>
@@ -62,6 +62,7 @@ require 'data.php';
   </header>
 
   <main class="flex flex-col py-12 px-16 gap-12">
+    <!-- localização sempre da raiz  -->
     <?php require "views/{$view}.view.php"; ?>
 
   </main>

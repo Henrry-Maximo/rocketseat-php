@@ -1,19 +1,3 @@
-<?php
-?>
-
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Login</title>
-
-  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
-</head>
-
 <body class="focus:outline-none flex flex-col antialiased h-screen bg-gray-100">
   <header class="flex flex-row justify-between p-12 items-center bg-white border-b-2 border-gray-200">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 text-center items-center">
@@ -37,7 +21,7 @@
       <div class="flex flex-col bg-purple-400 flex-1 p-2 rounded-l-lg border-2 border-purple-100 shadow-sm justify-center">
         <div class="flex flex-col mb-4">
           <h1 class="text-xl italic text-white">Workspace</h1>
-          <p class="text-xs text-white">Encontre os melhores livros e leve sempre com você, em qualquer lugar.</p>
+          <p class="text-xs text-white">Encontre1 os melhores livros e leve sempre com você, em qualquer lugar.</p>
         </div>
         <img src="./image.png" class="rounded-md border-2 border-purple-200" alt="project workspace book wise">
         <div class="mx-auto mt-4">
@@ -73,7 +57,4 @@
       </form>
     </section>
   </main>
-
 </body>
-
-</html>
